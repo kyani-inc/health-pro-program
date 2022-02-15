@@ -15,17 +15,7 @@ function replicated_sites_shortcode()
 	$replicated_sites = '';
 	$translated = '';
 
-	$translations = json_decode(file_get_contents(plugins_url() . '/kyani-custom-plugin/assets/data/translations/replicated-sites/us.json'));
-
-	// get sites current locale code
-	global $TRP_LANGUAGE;
-	$current_locale = $TRP_LANGUAGE;
-
-	foreach ($translations->locales as $locale) {
-		if ($locale->locale === $current_locale) {
-			$translated = $locale->translations;
-		}
-	}
+	$translated = json_decode(file_get_contents(plugins_url() . '/kyani-custom-plugin/assets/data/translations/replicated-sites/us.json'));
 
 	global $rep;
 
