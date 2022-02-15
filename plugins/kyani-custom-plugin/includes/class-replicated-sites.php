@@ -31,15 +31,15 @@ function replicated_sites_shortcode()
 															<div class="col-12 col-lg-7 col-xl-7 replicated-rep">
 																<h3 class="replicated-name">' . $rep->get_rep_name() . '</h3>
 																<div class="replicated-links">
-																	<span><a data-toggle="modal" data-target="#replicatedModal">' . $translated->view_bio . '</a></span>
-			                                      					<span><a href=" ' . $rep->get_rep_join_link() . '" target="_blank">' . $translated->join_team . '</a></span>
+																	<span><a data-toggle="modal" data-target="#replicatedModal">View Bio</a></span>
+			                                      					<span><a href=" ' . $rep->get_rep_join_link() . '" target="_blank">Join Team</a></span>
 																</div>
 																<div class="replicated-rep-info hidden">
-												<div>' . $translated->ibp . '</div>
+												<div>Independent Business Partner</div>
 												<div>ID: ' . $rep->get_rep_id() . '</div>
 												<div class="email-text-link"><a href="mailto:' . $rep->get_rep_email() . '">' . $rep->get_rep_email() . '</a></div>
 															</div>
-															  	<a class="replicated-view-profile"><span class="replicated-profile-text-show">' . $translated->view_profile . '</span><span class="replicated-profile-text-hide">' . $translated->hide_profile . '</span><div class="arrow">&raquo;</div></a>
+															  	<a class="replicated-view-profile"><span class="replicated-profile-text-show">View Profile</span><span class="replicated-profile-text-hide">Hide Profile</span><div class="arrow">&raquo;</div></a>
 														</div>
 													</div></div>
 												';
@@ -62,14 +62,14 @@ function replicated_sites_shortcode()
 												</div>
 												<div class="row">
 													<div class="modal-description">
-														<h4 class="about-me">' . $translated->about_me . '</h4>
+														<h4 class="about-me">About Me</h4>
 														' . $rep->get_rep_description() . '
 													</div>
 												</div>';
 			if ($translated->disclaimer) {
 				$replicated_sites .=  '			<div class="row">
 													<div class="modal-footer">
-														<p class="disclaimer" style="font-size: 12px">' . $translated->disclaimer . '</p>
+														<p class="disclaimer" style="font-size: 12px">DISCLAIMER: Results aren\'t typical or guaranteed and require hard work and skill. By referring customers, Business Partners can earn meaningful supplemental income based on actual product sales. Most people join only to purchase amazing products for personal use and earn little or no income. To see what\'s possible visit income.kyani.com.</br></br>DISCLAIMER: These statements have not been evaluated by the FDA or any government agency. Kyäni products are not intended to diagnose, treat, cure, or prevent any disease or medical condition.</p>
 													</div>
 												</div>';
 			};
