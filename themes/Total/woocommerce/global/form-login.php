@@ -69,7 +69,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 		<h2><?php esc_html_e( 'Register', 'woocommerce' ); ?></h2>
 
-		<?php echo(do_shortcode('[ultimatemember form_id="25"]')) ?>
+		<?php echo(do_shortcode('[ultimatemember form_id="5"]')) ?>
 
 
 	</div>

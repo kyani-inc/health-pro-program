@@ -11,7 +11,8 @@ $kyani_plugin_includes = array(
 	'/class-rep.php',
 	'/replicatedDisplay/replicatedDisplay.php',
 	'/link-generator.php',
-	'/custom-config.php'
+	'/custom-config.php',
+	'/rep-url.php'
 );
 
 foreach ($kyani_plugin_includes as $file) {
