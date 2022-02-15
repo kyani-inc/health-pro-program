@@ -1,0 +1,46 @@
+{
+  "locales": [
+    {
+      "locale": "en_US",
+      "translations": {
+        "view_bio": "View Bio",
+        "hide_bio":  "Hide Bio",
+        "ibp": "Independent Business Partner",
+        "join_team": "Join Team",
+        "shop_now": "Shop Now",
+        "about_me": "About Me",
+        "disclaimer": "DISCLAIMER: Results aren't typical or guaranteed and require hard work and skill. By referring customers, Business Partners can earn meaningful supplemental income based on actual product sales. Most people join only to purchase amazing products for personal use and earn little or no income. To see what's possible visit income.kyani.com.</br></br>DISCLAIMER: These statements have not been evaluated by the FDA or any government agency. Kyäni products are not intended to diagnose, treat, cure, or prevent any disease or medical condition.",
+        "country": "Country"
+      }
+    },
+    {
+      "locale": "es_MX",
+      "translations": {
+        "view_bio": "Ver Bio",
+        "hide_bio":  "Ocultar Bio",
+        "view_profile": "Ver Perfil",
+        "hide_profile": "Ocultar Perfil",
+        "ibp": "Distribuidor Independiente de Kyäni",
+        "join_team": "¡Comience Hoy!",
+        "shop_now": "Compra Hoy",
+        "about_me": "Sobre Mí",
+        "disclaimer": "DESCARGO DE RESPONSABILIDAD: Los resultados no son típicos ni están garantizados y requieren mucho trabajo y habilidad. Al referir clientes, los Distribuidores pueden obtener ingresos suplementarios basados en ventas de productos. La mayoría de las personas se inscriben solo para comprar productos para uso personal y ganan poco o no ganan dinero. Para ver lo que es posible, visita a ingreso.kyani.com.<br><br>DESCARGO DE RESPONSABILIDAD: Productos de Kyani no son medicamentos, no se han aprobado por la FDA o ninguna agencia gubernamental, ni están diseñados para prevenir, aliviar, tratar o curar ninguna enfermedad, condición médica, trastorno o estado fisiológico. Kyani recomienda consultar a su médico antes de consumir cualquier producto. El consumo de este producto es responsabilidad de quien lo recomienda y de quien lo usa.",
+        "country": "País"
+      }
+    },
+    {
+      "locale": "zh_HK",
+      "translations": {
+        "view_bio": "查看生物",
+        "hide_bio":  "隐藏生物",
+        "view_profile": "查看完整档案",
+        "hide_profile": "隐藏完整个人资料",
+        "ibp": "独立业务合作伙伴",
+        "join_team": "加入团队",
+        "shop_now": "立即购买",
+        "about_me": "关于我",
+        "country": "国家"
+      }
+    }
+  ]
+}

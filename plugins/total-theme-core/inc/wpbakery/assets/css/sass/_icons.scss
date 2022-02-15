@@ -1,0 +1,294 @@
+.vc_element-icon {
+
+    &.vcex_element-icon {
+        border-radius: 4px;
+        background-color: #1175e9;
+        background-size: 24px;
+        background-position: center center;
+        background-image: url('../icons/default.svg');
+    }
+
+    &.vcex_element-icon--flex-container,
+    &[data-is-container=true].vcex_element-icon--flex-container {
+        background-image: url('../icons/flex-container.svg');
+    }
+
+    &.vcex_element-icon--contact {
+        background-image: url('../icons/contact.svg');
+    }
+
+    &.vcex_element-icon--toggle {
+        background-image: url('../icons/toggle.svg');
+    }
+
+    &.vcex_element-icon--video {
+        background-image: url('../icons/video.svg');
+    }
+
+    &.vcex_element-icon--alert {
+        background-image: url('../icons/alert.svg');
+    }
+
+    &.vcex_element-icon--button {
+        background-image: url('../icons/button.svg');
+    }
+
+    &.vcex_element-icon--table {
+        background-image: url('../icons/table.svg');
+    }
+
+    &.vcex_element-icon--testimonial {
+        background-image: url('../icons/testimonial.svg');
+    }
+
+    &.vcex_element-icon--breadcrumbs {
+        background-image: url('../icons/breadcrumbs.svg');
+    }
+
+    &.vcex_element-icon--callout {
+        background-image: url('../icons/callout.svg');
+    }
+
+    &.vcex_element-icon--divider {
+        background-image: url('../icons/divider.svg');
+    }
+
+    &.vcex_element-icon--divider-dots {
+        background-image: url('../icons/divider-dots.svg');
+    }
+
+    &.vcex_element-icon--divider-multicolor {
+        background-image: url('../icons/divider-multicolor.svg');
+    }
+
+    &.vcex_element-icon--column-side-border {
+        background-image: url('../icons/column-side-border.svg');
+    }
+
+    &.vcex_element-icon--image {
+        background-image: url('../icons/image.svg');
+    }
+
+    &.vcex_element-icon--before-after {
+        background-image: url('../icons/before-after.svg');
+    }
+
+    &.vcex_element-icon--portfolio {
+        background-image: url('../icons/portfolio.svg');
+    }
+
+    &.vcex_element-icon--carousel {
+        background-image: url('../icons/carousel.svg');
+    }
+
+    &.vcex_element-icon--woocommerce {
+        background-image: url('../icons/woocommerce.svg');
+    }
+
+    &.vcex_element-icon--newsletter {
+        background-image: url('../icons/newsletter.svg');
+    }
+
+    &.vcex_element-icon--image-banner {
+        background-image: url('../icons/image-banner.svg');
+    }
+
+    &.vcex_element-icon--image-gallery {
+        background-image: url('../icons/image-gallery.svg');
+    }
+
+    &.vcex_element-icon--image-carousel {
+        background-image: url('../icons/image-carousel.svg');
+    }
+
+    &.vcex_element-icon--image-swap {
+        background-image: url('../icons/image-swap.svg');
+    }
+
+    &.vcex_element-icon--staff {
+        background-image: url('../icons/staff.svg');
+    }
+
+    &.vcex_element-icon--users-grid {
+        background-image: url('../icons/users-grid.svg');
+    }
+
+    &.vcex_element-icon--page-title {
+        background-image: url('../icons/page-title.svg');
+    }
+
+    &.vcex_element-icon--bullets {
+        background-image: url('../icons/bullets.svg');
+    }
+
+    &.vcex_element-icon--list-item {
+        background-image: url('../icons/list-item.svg');
+    }
+
+    &.vcex_element-icon--leader {
+        background-image: url('../icons/leader.svg');
+    }
+
+    &.vcex_element-icon--login {
+        background-image: url('../icons/login.svg');
+    }
+
+    &.vcex_element-icon--custom-field {
+        background-image: url('../icons/custom-field.svg');
+    }
+
+    &.vcex_element-icon--post-content {
+        background-image: url('../icons/post-content.svg');
+    }
+
+    &.vcex_element-icon--pricing-table {
+        background-image: url('../icons/pricing-table.svg');
+    }
+
+    &.vcex_element-icon--icon-box {
+        background-image: url('../icons/icon-box.svg');
+    }
+
+    &.vcex_element-icon--feature-box {
+        background-image: url('../icons/feature-box.svg');
+    }
+
+    &.vcex_element-icon--teaser {
+        background-image: url('../icons/teaser.svg');
+    }
+
+    &.vcex_element-icon--spacing {
+        background-image: url('../icons/spacing.svg');
+    }
+
+    &.vcex_element-icon--author-bio {
+        background-image: url('../icons/author-bio.svg');
+    }
+
+    &.vcex_element-icon--icon {
+        background-image: url('../icons/icon.svg');
+    }
+
+    &.vcex_element-icon--post-cards {
+        background-image: url('../icons/post-cards.svg');
+    }
+
+    &.vcex_element-icon--blog-grid {
+        background-image: url('../icons/blog-grid.svg');
+    }
+
+    &.vcex_element-icon--post-next-prev {
+        background-image: url('../icons/post-next-prev.svg');
+    }
+
+    &.vcex_element-icon--milestone {
+        background-image: url('../icons/milestone.svg');
+    }
+
+    &.vcex_element-icon--searchbar {
+        background-image: url('../icons/searchbar.svg');
+    }
+
+    &.vcex_element-icon--shortcode {
+        background-image: url('../icons/shortcode.svg');
+    }
+
+    &.vcex_element-icon--heading {
+        background-size: 20px;
+        background-image: url('../icons/heading.svg');
+    }
+
+    &.vcex_element-icon--animated-text {
+        background-image: url('../icons/animated-text.svg');
+    }
+
+    &.vcex_element-icon--countdown {
+        background-image: url('../icons/countdown.svg');
+    }
+
+    &.vcex_element-icon--navbar {
+        background-image: url('../icons/navbar.svg');
+    }
+
+    &.vcex_element-icon--social-share {
+        background-image: url('../icons/social-share.svg');
+    }
+
+    &.vcex_element-icon--staff-social {
+        background-image: url('../icons/staff-social.svg');
+    }
+
+    &.vcex_element-icon--post-comments {
+        background-image: url('../icons/post-comments.svg');
+    }
+
+    &.vcex_element-icon--form-shortcode {
+        background-image: url('../icons/form-shortcode.svg');
+    }
+
+    &.vcex_element-icon--multibuttons {
+        background-image: url('../icons/multibuttons.svg');
+    }
+
+    &.vcex_element-icon--social-links {
+        background-image: url('../icons/social-links.svg');
+    }
+
+    &.vcex_element-icon--term-description {
+        background-image: url('../icons/term-description.svg');
+    }
+
+    &.vcex_element-icon--post-terms {
+        background-image: url('../icons/post-terms.svg');
+    }
+
+    &.vcex_element-icon--post-media {
+        background-image: url('../icons/post-media.svg');
+    }
+
+    &.vcex_element-icon--post-series {
+        background-image: url('../icons/post-series.svg');
+    }
+
+    &.vcex_element-icon--recent-news {
+        background-image: url('../icons/recent-news.svg');
+    }
+
+    &.vcex_element-icon--blog-carousel {
+        background-image: url('../icons/blog-carousel.svg');
+    }
+
+    &.vcex_element-icon--post-meta {
+        background-image: url('../icons/post-meta.svg');
+    }
+
+    &.vcex_element-icon--post-type-grid {
+        background-image: url('../icons/post-type-grid.svg');
+    }
+
+    &.vcex_element-icon--post-type-archive {
+        background-image: url('../icons/post-type-archive.svg');
+    }
+
+    &.vcex_element-icon--post-type-slider {
+        background-image: url('../icons/post-type-slider.svg');
+    }
+
+    &.vcex_element-icon--terms-grid {
+        background-image: url('../icons/terms-grid.svg');
+    }
+
+    &.vcex_element-icon--terms-carousel {
+        background-image: url('../icons/terms-carousel.svg');
+    }
+
+    &.vcex_element-icon--skillbar {
+        background-size: 20px;
+        background-image: url('../icons/skillbar.svg');
+    }
+
+}
+
+.admin-color-modern .vc_element-icon.vcex_element-icon {
+    background-color: #3858e9;
+}

@@ -1,0 +1,27 @@
+{
+  "country": "AUSTRALIA",
+  "default_rep": "156",
+  "nitro_nutrition": "932",
+  "sunrise": "503ENSR30",
+  "nitro": "503ENFX56",
+  "nitroxtreme": "503ENXT56",
+  "sunset": "503ENSS",
+  "hl5": "503ENHL5P",
+  "fit20": "503ENFIT20",
+  "core140": "503ENCORECH",
+  "on": "503ENNOOTROPRG",
+  "origin": "503ENOPBSV",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "en_AU",
+      "language_code": "37",
+      "join_locale": "en-au"
+    },
+    {
+      "locale": "zh_HK",
+      "language_code": "-2",
+      "join_locale": "zh-au"
+    }
+  ]
+}

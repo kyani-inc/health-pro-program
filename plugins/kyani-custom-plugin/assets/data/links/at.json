@@ -1,0 +1,22 @@
+{
+    "country": "AUSTRIA",
+    "default_rep": "151",
+    "nitro_nutrition": "947",
+    "sunrise": "218DESR30",
+    "nitro": "218DEFX56",
+    "nitroxtreme": "218DEXT56",
+    "sunset": "218DESS",
+    "hl5": "218DEHL5P",
+    "fit20": "218DEFIT20",
+    "core140": "218DECORECH",
+    "on": "218DENOOTROPRG",
+    "origin": "218DEOPBSV",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "de_AT",
+        "language_code": "60",
+        "join_locale": "de-at"
+      }
+    ]
+}

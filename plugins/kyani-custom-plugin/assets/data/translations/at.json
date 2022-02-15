@@ -1,0 +1,18 @@
+{
+    "locales": [
+      {
+        "locale": "de_AT",
+        "translations": {
+          "view_bio": "Bio anzeigen",
+          "hide_bio":  "Bio ausblenden",
+          "view_profile": "Vollständiges Profil anzeigen",
+          "hide_profile": "Vollständiges Profil ausblenden",
+          "ibp": "Unabhängiger Geschäftspartner",
+          "join_team": "Dem Team beitreten",
+          "shop_now": "Jetzt Kaufen",
+          "about_me": "Über mich",
+          "country": "Land"
+        }
+      }
+    ]
+  }

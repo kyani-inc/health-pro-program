@@ -1,0 +1,27 @@
+{
+    "country": "SINGAPORE",
+    "default_rep": "161",
+    "nitro_nutrition": "975",
+    "sunrise": "414ENSR30",
+    "nitro": "414ENFX56",
+    "nitroxtreme": "414ENXT56",
+    "sunset": "414ENSS",
+    "hl5": "414ENHL5P",
+    "fit20": "414ENFIT20",
+    "core140": "414ENCORECH",
+    "on": "414ENNOOTROPRG",
+    "origin": "414ENOPBSV",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "en_US",
+        "language_code": "131",
+        "join_locale": "en-sg"
+      },
+      {
+        "locale": "zh_HK",
+        "language_code": "30",
+        "join_locale": "zh-sg"
+      }
+    ]
+  }

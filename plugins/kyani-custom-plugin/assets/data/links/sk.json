@@ -1,0 +1,32 @@
+{
+    "country": "SLOVAKIA",
+    "default_rep": "151",
+    "nitro_nutrition": "967",
+    "sunrise": "200ENSR30",
+    "nitro": "200ENFX56",
+    "nitroxtreme": "200ENXT56",
+    "sunset": "200ENSS",
+    "hl5": "200ENHL5P",
+    "fit20": "200ENFIT20",
+    "core140": "200ENCORECH",
+    "on": "200ENNOOTROPRG",
+    "origin": "200ENOPBSV",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "sk_SK",
+        "language_code": "96",
+        "join_locale": "sk-sk"
+      },
+      {
+        "locale": "hu_HU",
+        "language_code": "67",
+        "join_locale": "hu-hu"
+      },
+      {
+        "locale": "en_GB",
+        "language_code": "47",
+        "join_locale": "en-gb"
+      }
+    ]
+  }

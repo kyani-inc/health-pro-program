@@ -1,0 +1,22 @@
+{
+  "country": "FRENCH POLYNESIA",
+  "default_rep": "157",
+  "nitro_nutrition": "930",
+  "sunrise": "511FRSR30",
+  "nitro": "511FRFX56",
+  "nitroxtreme": "511FRXT56",
+  "sunset": "511FRSS",
+  "hl5": "511FRHL5",
+  "fit20": "",
+  "core140": "",
+  "on": "",
+  "origin": "",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "fr_CA",
+      "language_code": "57",
+      "join_locale": "fr-pf"
+    }
+  ]
+}

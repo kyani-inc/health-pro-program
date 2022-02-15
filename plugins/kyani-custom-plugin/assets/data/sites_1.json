@@ -1,0 +1,289 @@
+{
+  "regions": [
+    {
+      "name": "North America",
+      "countries": [
+        {
+          "code": "us",
+          "url": "https://kyani.com/us/en-us",
+          "display_name": "USA"
+        },
+        {
+          "code": "ca",
+          "url": "https://kyani.com/ca/en-us",
+          "display_name": "Canada"
+        }
+      ]
+    },
+    {
+      "name": "Central / South America",
+      "countries": [
+        {
+          "code": "co",
+          "url": "https://kyani.com/co/es-co",
+          "display_name": "Colombia"
+        },
+        {
+          "code": "do",
+          "url": "https://kyani.com/do/es-do",
+          "display_name": "Dominican Republic"
+        },
+        {
+          "code": "mx",
+          "url": "https://kyani.com/mx/es-mx",
+          "display_name": "Mexico"
+        },
+        {
+          "code": "pe",
+          "url": "https://kyani.com/pe/es-hn",
+          "display_name": "Peru"
+        },
+        {
+          "code": "pr",
+          "url": "https://kyani.com/pr/es-mx",
+          "display_name": "Puerto Rico"
+        }
+      ]
+    },
+    {
+      "name": "Europe",
+      "countries": [
+        {
+          "code": "at",
+          "url": "https://kyani.com/at/de-at",
+          "display_name": "Austria"
+        },
+        {
+          "code": "be",
+          "url": "https://kyani.com/be/fr-fr",
+          "display_name": "Belgium"
+        },
+        {
+          "code": "bg",
+          "url": "https://kyani.com/bg/en-gb",
+          "display_name": "Bulgaria"
+        },
+        {
+          "code": "hr",
+          "url": "https://kyani.com/hr/hr-hr",
+          "display_name": "Croatia"
+        },
+        {
+          "code": "cz",
+          "url": "https://kyani.com/cz/sk-sk",
+          "display_name": "Czech Republic"
+        },
+        {
+          "code": "cy",
+          "url": "https://kyani.com/cy/en-gb",
+          "display_name": "Cyprus"
+        },
+        {
+          "code": "dk",
+          "url": "https://kyani.com/dk/da-dk",
+          "display_name": "Denmark"
+        },
+        {
+          "code": "ee",
+          "url": "https://kyani.com/ee/et-ee",
+          "display_name": "Estonia"
+        },
+        {
+          "code": "fi",
+          "url": "https://kyani.com/fi/fi-fi",
+          "display_name": "Finland"
+        },
+        {
+          "code": "fr",
+          "url": "https://kyani.com/fr/fr-fr",
+          "display_name": "France"
+        },
+        {
+          "code": "de",
+          "url": "https://kyani.com/de/de-de",
+          "display_name": "Germany"
+        },
+        {
+          "code": "gr",
+          "url": "https://kyani.com/gr/en-bg",
+          "display_name": "Greece"
+        },
+        {
+          "code": "hu",
+          "url": "https://kyani.com/hu/hu-hu",
+          "display_name": "Hungary"
+        },
+        {
+          "code": "ie",
+          "url": "https://kyani.com/ie/en-gb",
+          "display_name": "Ireland"
+        },
+        {
+          "code": "it",
+          "url": "https://kyani.com/it/it-it",
+          "display_name": "Italy"
+        },
+        {
+          "code": "lv",
+          "url": "https://kyani.com/lv/lv-lv",
+          "display_name": "Latvia"
+        },
+        {
+          "code": "li",
+          "url": "https://kyani.com/li/de-ch",
+          "display_name": "Liechtenstein"
+        },
+        {
+          "code": "lt",
+          "url": "https://kyani.com/lt/lt-lt",
+          "display_name": "Lithuania"
+        },
+        {
+          "code": "lu",
+          "url": "https://kyani.com/lu/en-gb",
+          "display_name": "Luxembourg"
+        },
+        {
+          "code": "mt",
+          "url": "https://kyani.com/mt/en-gb",
+          "display_name": "Malta"
+        },
+        {
+          "code": "nl",
+          "url": "https://kyani.com/nl/en-gb",
+          "display_name": "Netherlands"
+        },
+        {
+          "code": "no",
+          "url": "https://kyani.com/no/nb-no",
+          "display_name": "Norway"
+        },
+        {
+          "code": "pl",
+          "url": "https://kyani.com/pl/pl-pl",
+          "display_name": "Poland"
+        },
+        {
+          "code": "pt",
+          "url": "https://kyani.com/pt/en-gb",
+          "display_name": "Portugal"
+        },
+        {
+          "code": "ro",
+          "url": "https://kyani.com/ro/en-gb",
+          "display_name": "Romania"
+        },
+        {
+          "code": "sk",
+          "url": "https://kyani.com/sk/sk-sk",
+          "display_name": "Slovakia"
+        },
+        {
+          "code": "si",
+          "url": "https://kyani.com/si/en-gb",
+          "display_name": "Slovenia"
+        },
+        {
+          "code": "es",
+          "url": "https://kyani.com/es/es-es",
+          "display_name": "Spain"
+        },
+        {
+          "code": "se",
+          "url": "https://kyani.com/se/sv-se",
+          "display_name": "Sweden"
+        },
+        {
+          "code": "ch",
+          "url": "https://kyani.com/ch/de-ch",
+          "display_name": "Switzerland"
+        },
+        {
+          "code": "tr",
+          "url": "https://kyani.com/tr/tr-tr",
+          "display_name": "Turkey"
+        },
+        {
+          "code": "gb",
+          "url": "https://kyani.com/gb/en-gb",
+          "display_name": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "name": "Greater China",
+      "countries": [
+        {
+          "code": "cn",
+          "url": "https://kyani.cn",
+          "display_name": "China"
+        },
+        {
+          "code": "hk",
+          "url": "https://kyani.com/hk/zh-hk",
+          "display_name": "Hong Kong"
+        },
+        {
+          "code": "mo",
+          "url": "https://kyani.com/mo/zh-hk",
+          "display_name": "Macau"
+        },
+        {
+          "code": "tw",
+          "url": "https://kyani.com/tw/zh-tw",
+          "display_name": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "South Asia / North Asia / Pacific",
+      "countries": [
+        {
+          "code": "au",
+          "url": "https://kyani.com/au/en-au",
+          "display_name": "Australia"
+        },
+        {
+          "code": "pf",
+          "url": "https://kyani.com/pf/fr-pf",
+          "display_name": "French Polynesia"
+        },
+        {
+          "code": "jp",
+          "url": "https://kyani.com/jp/ja-jp",
+          "display_name": "Japan"
+        },
+        {
+          "code": "kr",
+          "url": "https://kyani.com/kr/ko-kr",
+          "display_name": "Korea"
+        },
+        {
+          "code": "my",
+          "url": "https://kyani.com/my/en-sg",
+          "display_name": "Malaysia"
+        },
+        {
+          "code": "nz",
+          "url": "https://kyani.com/nz/en-au",
+          "display_name": "New Zealand"
+        },
+        {
+          "code": "ph",
+          "url": "https://kyani.com/ph/en-ph",
+          "display_name": "Philippines"
+        },
+        {
+          "code": "sg",
+          "url": "https://kyani.com/sg/en-sg",
+          "display_name": "Singapore"
+        },
+        {
+          "code": "th",
+          "url": "https://kyani.com/th/th-th",
+          "display_name": "Thailand"
+        }
+      ]
+    }
+  ]
+}

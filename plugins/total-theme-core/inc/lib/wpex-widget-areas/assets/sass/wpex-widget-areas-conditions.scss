@@ -1,0 +1,141 @@
+#wpex-widget-areas-conditions {
+
+	.inside {
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+.wpex-wa-conditions-panel {
+	display: flex;
+
+	&__tabs {
+		width: 20%;
+		line-height: 1em;
+		position: relative;
+		background-color: #fafafa;
+		border-right: 1px solid #eee;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0 0 45px;
+	}
+
+	&__tab {
+		margin: 0;
+		padding: 0;
+		display: block;
+		position: relative;
+
+		a {
+			margin: 0;
+			padding: 10px;
+			display: block;
+			text-decoration: none;
+			line-height: 20px!important;
+			border-bottom: 1px solid #eee;
+			&:focus:not(:focus-visible) {
+				outline: 0;
+				box-shadow: none;
+			}
+		}
+
+		&--active {
+			color: #555;
+			background-color: #eee;
+		}
+
+	}
+
+	&__sections {
+		flex-grow: 1;
+		padding: 20px;
+	}
+
+	&__section {
+		display: none;
+		gap: 10px;
+		&--columns {
+			grid-template-columns: repeat( 3, 1fr );
+		}
+		&--active {
+			display: grid;
+		}
+	}
+
+}
+
+.wpex-wa-conditions-accordion {
+	border-bottom: 1px solid #eee;
+
+	&__title {
+		margin: 0;
+	    background-color: #fafafa;
+	    border: 1px solid #eee;
+	    border-bottom: 0;
+	    user-select: none;
+	}
+
+	&__toggle {
+		position: relative;
+	    height: auto;
+	    width: 100%;
+	    padding: 10px 15px;
+	    border: 0;
+	    background: 0;
+	    cursor: pointer;
+	    transition: background .1s ease-in-out;
+	    font-weight: 500;
+	    text-align: left;
+	    color: #1e1e1e;
+
+	    svg {
+			position: absolute;
+		    right: 10px;
+		    height: 24px;
+		    top: 50%;
+		    margin-top: -12px;;
+		    color: #1e1e1e;
+		    fill: currentColor;
+		    transition: color .1s ease-in-out;
+	    }
+	}
+
+	&__content {
+		display: grid;
+		gap: 10px;
+		padding: 15px;
+		border: 1px solid #eee;
+    	border-bottom: 0;
+    	&:not(.wpex-wa-conditions-accordion--active) {
+    		display: none;
+    	}
+	}
+
+	&__toggle[aria-expanded="true"] {
+		color: #555;
+		background-color: #eee;
+		svg {
+			transform: rotate(180deg);
+		}
+	}
+
+}
+
+.wpex-wa-conditions-item {
+	display: flex;
+	align-items: center;
+
+	input[type=checkbox],
+	input[type=radio] {
+		margin-top: 0;
+		margin-right: 7px;
+	}
+}
+
+.wpex-wa-conditions-footer {
+	background-color: #fafafa;
+	border-top: 1px solid #eee;
+	padding: 10px 20px;
+	text-align: right;
+}

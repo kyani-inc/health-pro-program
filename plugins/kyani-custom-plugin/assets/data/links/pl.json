@@ -1,0 +1,27 @@
+{
+    "country": "POLAND",
+    "default_rep": "151",
+    "nitro_nutrition": "969",
+    "sunrise": "235PLSR30",
+    "nitro": "235PLFX56",
+    "nitroxtreme": "235PLXT56",
+    "sunset": "235PLSS",
+    "hl5": "235PLHL5P",
+    "fit20": "235PLFIT20",
+    "core140": "235PLCORECH",
+    "on": "235PLNOOTROPRG",
+    "origin": "235PLOPBSV",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "pl_PL",
+        "language_code": "83",
+        "join_locale": "pl-pl"
+      },
+      {
+        "locale": "en_GB",
+        "language_code": "47",
+        "join_locale": "en-gb"
+      }
+    ]
+  }

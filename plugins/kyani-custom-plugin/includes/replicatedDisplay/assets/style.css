@@ -1,0 +1,111 @@
+.repDropdown {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #183C65 !important;
+}
+
+.repDropdown::after {
+  border: none;
+  font: normal normal normal 13px/1 FontAwesome;
+  font-weight: 200;
+  content: "\f078";
+  vertical-align: 0;
+  margin-left: 5px;
+  z-index: 9999;
+}
+#repDisplay {
+  background-color: rgba(241, 243, 245, 0.85);
+  top: 78px;
+  position: absolute;
+  border: none;
+  left: 0;
+  border-radius: 0;
+  min-width: 300px;
+  overflow-x: hidden;
+  min-height: 440px;
+  z-index: 9999;
+  padding: 0;
+  justify-content: center;
+}
+
+.repImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.repName {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #131313;
+}
+
+.repInfo {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #131313 !important;
+}
+
+.repInfo a {
+  color: #131313;
+}
+
+.repBioView {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #183C65;
+  text-decoration: underline;
+}
+
+.repBioView #hideBio{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #183C65;
+  text-decoration: underline;
+}
+
+#repBio {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #131313;
+}
+
+#repBio h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #131313;
+}
+
+#repBio .repDisclaimer {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 27px;
+  color: #131313;
+}
+
+.repJoin {
+  background-color: #F58A56;
+  border-radius: 80px;
+  padding: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.repJoin a {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 22px;
+  color: white !important;
+  text-decoration: none;
+}

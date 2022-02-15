@@ -1,0 +1,22 @@
+{
+  "country": "PHILIPPINES",
+  "default_rep": "159",
+  "nitro_nutrition": "979",
+  "sunrise": "536ENSR30",
+  "nitro": "536ENFX56",
+  "nitroxtreme": "536ENXT56",
+  "sunset": "536ENSS",
+  "hl5": "536ENHL5P",
+  "fit20": "536ENFIT20",
+  "core140": "",
+  "on": "",
+  "origin": "",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "en_US",
+      "language_code": "44",
+      "join_locale": "en-ph"
+    }
+  ]
+}

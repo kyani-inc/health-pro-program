@@ -1,0 +1,19 @@
+{
+  "locales": [
+    {
+      "locale": "tr_TR",
+      "translations": {
+        "view_bio": "Biyografiyi Görüntüle",
+        "hide_bio": "Biyografiyi Gizle",
+        "view_profile": "Tüm Profili Görüntüle",
+        "hide_profile": "Tam Profili Gizle",
+        "ibp": "Bağımsız İş Ortağı",
+        "join_team": "Takıma katıl",
+        "shop_now": "Hemen Satın Alın",
+        "about_me": "Benim hakkımda",
+        "country": "Ülke"
+      }
+    }
+    }
+  ]
+}

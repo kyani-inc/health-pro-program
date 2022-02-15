@@ -1,0 +1,27 @@
+{
+    "country": "HONG KONG",
+    "default_rep": "150",
+    "nitro_nutrition": "937",
+    "sunrise": "302ZHSR30",
+    "nitro": "302ZHFX56",
+    "nitroxtreme": "302ZHXT56",
+    "sunset": "302ZHSS",
+    "hl5": "302ZHHL5BR",
+    "fit20": "302ZHFIT20",
+    "core140": "302ZHCORECH",
+    "on": "302ZHNOOTROPMB",
+    "origin": "302ZHOPBSV",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "zh_HK",
+        "language_code": "28",
+        "join_locale": "zh-hk"
+      },
+      {
+        "locale": "en_US",
+        "language_code": "200",
+        "join_locale": "en-hk"
+      }
+    ]
+  }

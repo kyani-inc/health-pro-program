@@ -1,0 +1,18 @@
+{
+  "locales": [
+    {
+      "locale": "ja",
+      "translations": {
+        "view_bio": "略歴を見る",
+        "hide_bio": "バイオを隠す",
+        "view_profile": "プロフィール全体を見る",
+        "hide_profile": "フルプロファイルを非表示",
+        "ibp": "独立したビジネスパートナー",
+        "join_team": "チームに入ります",
+        "shop_now": "今すぐ購入",
+        "about_me": "私について",
+        "country": "国"
+      }
+    }
+  ]
+}

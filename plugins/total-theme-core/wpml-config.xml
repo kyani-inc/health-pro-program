@@ -1,0 +1,7 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="0">wpex_widget_area</custom-type>
+        <custom-type translate="0">wpex_color_palette</custom-type>
+        <custom-type translate="0">wpex_font</custom-type>
+    </custom-types>
+</wpml-config>

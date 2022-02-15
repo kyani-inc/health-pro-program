@@ -1,0 +1,27 @@
+{
+    "country": "ITALY",
+    "default_rep": "151",
+    "nitro_nutrition": "961",
+    "sunrise": "200ITSR30",
+    "nitro": "200ITFX56",
+    "nitroxtreme": "200ITXT56",
+    "sunset": "200ITSS",
+    "hl5": "200ITHL5P",
+    "fit20": "200ITFIT20",
+    "core140": "200ITCORECH",
+    "on": "200ITNOOTROPRG",
+    "origin": "200ITOPBSV",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "it_IT",
+        "language_code": "70",
+        "join_locale": "it-it"
+      },
+      {
+        "locale": "en_GB",
+        "language_code": "47",
+        "join_locale": "en-gb"
+      }
+    ]
+  }

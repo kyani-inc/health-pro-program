@@ -1,0 +1,31 @@
+{
+  "locales": [
+    {
+      "locale": "en_AU",
+      "translations": {
+        "view_bio": "View Bio",
+        "hide_bio":  "Hide Bio",
+        "ibp": "Independent Business Partner",
+        "join_team": "Join Team",
+        "shop_now": "Shop Now",
+        "about_me": "About Me",
+        "disclaimer": "DISCLAIMER: Results aren't typical or guaranteed and require hard work and skill. By referring customers, Business Partners can earn meaningful supplemental income based on actual product sales. Most people join only to purchase amazing products for personal use and earn little or no income. To see what's possible visit income.kyani.com.</br></br>DISCLAIMER: These statements have not been evaluated by the FDA or any government agency. Kyäni products are not intended to diagnose, treat, cure, or prevent any disease or medical condition.",
+        "country": "Country"
+      }
+    },
+    {
+      "locale": "zh_HK",
+      "translations": {
+        "view_bio": "查看生物",
+        "hide_bio":  "隐藏生物",
+        "view_profile": "查看完整档案",
+        "hide_profile": "隐藏完整个人资料",
+        "ibp": "独立业务合作伙伴",
+        "join_team": "加入团队",
+        "shop_now": "立即购买",
+        "about_me": "关于我",
+        "country": "国家"
+      }
+    }
+  ]
+}

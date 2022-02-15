@@ -1,0 +1,27 @@
+{
+  "country": "DENMARK",
+  "default_rep": "151",
+  "nitro_nutrition": "953",
+  "sunrise": "213DASR30",
+  "nitro": "213DAFX56",
+  "nitroxtreme": "213DAXT56",
+  "sunset": "213DASS",
+  "hl5": "213DAHL5P",
+  "fit20": "213DAFIT20",
+  "core140": "213DACORECH",
+  "on": "213DANOOTROPRG",
+  "origin": "213DAOPBSV",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "da_DK",
+      "language_code": "34",
+      "join_locale": "da-dk"
+    },
+    {
+      "locale": "en_GB",
+      "language_code": "47",
+      "join_locale": "en-gb"
+    }
+  ]
+}

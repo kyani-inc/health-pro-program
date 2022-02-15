@@ -1,0 +1,22 @@
+{
+    "country": "KOREA",
+    "default_rep": "",
+    "nitro_nutrition": "",
+    "sunrise": "304KOSR30",
+    "nitro": "",
+    "nitroxtreme": "304KOXT56",
+    "sunset": "304KOSS",
+    "hl5": "304KOHL5",
+    "fit20": "304KOFIT20",
+    "core140": "",
+    "on": "",
+    "origin": "",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "ko_KR",
+        "language_code": "73",
+        "join_locale": "ko-kr"
+      }
+    ]
+  }
