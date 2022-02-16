@@ -26,7 +26,7 @@ function replicated_display_shortcode()
 	// IF rep and rep found create menu item
 	if ($rep) {
 		if ($rep->rep_found()) {
-			$replicated_display = '<li class="nav-item"><a class="repDropdown nav-link" onclick="toggleRepDisplay()">' . $rep->get_rep_name() . '</a></li>';
+			$replicated_display = '<li class="nav-item">You\'re Shopping With<a class="repDropdown nav-link" onclick="toggleRepDisplay()">' . $rep->get_rep_name() . '</a></li>';
 
 			$replicated_display .= '<div id="repDisplay" style="display: none;" class="col-12"><div class="col-7 row d-flex justify-content-center p-5">
 								  <div class="col-2 col-md-5 col-lg-2 col-xl-2 p-3 text-right"><img src="' . $rep->get_rep_image() . '" class="repImage"></div>

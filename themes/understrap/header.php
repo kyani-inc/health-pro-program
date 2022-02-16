@@ -92,7 +92,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 					   class="navbar-brand"><img
 								src="<?php echo esc_url(bloginfo('template_directory') . "/images/kyani-blue-logo.svg") ?>"
 								alt=""
-								width=<?php echo esc_attr($logoWidth) ?>></a>
+								width="80"</a>
 					<ul class="navbar-nav desktop-only">
 					<?php echo do_shortcode('[replicatedDisplay]'); ?>
 					</ul>
@@ -108,9 +108,18 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 									'walker' => new Custom_WP_Bootstrap_Navwalker()
 							)
 					); ?>
-					<ul class="navbar-nav desktop-only ml-auto">
-						<a>Login</a>
-					</ul>
+					<?php wp_nav_menu(
+							array(
+									'theme_location' => 'secondary',
+									'container_class' => 'collapse navbar-collapse',
+									'container_id' => 'navbarNavDropdown ',
+									'menu_class' => 'navbar-nav ml-auto desktop-only',
+									'fallback_cb' => '',
+									'menu_id' => 'main-menu',
+									'depth' => 3,
+									'walker' => new Custom_WP_Bootstrap_Navwalker()
+							)
+					); ?>
 					<a class="navbar-toggler nav-button ml-auto mobile-only"><span
 								id="nav-icon3">
 							<span class="side-panel-btn"></span>
