@@ -138,7 +138,6 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 					<div class="main-menu-container flex-column d-flex">
 						<ul class="nav flex-column">
 						<?php echo do_shortcode('[replicatedDisplayMobile]'); ?>
-						<?php echo do_shortcode('[navShopLink]'); ?>
 						</ul>
 						<?php
 						wp_nav_menu(array(

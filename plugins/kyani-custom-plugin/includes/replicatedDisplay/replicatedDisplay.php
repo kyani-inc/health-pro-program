@@ -71,7 +71,7 @@ function replicated_display_mobile_shortcode()
 
 	// GET translations for current country
 	$locale_translations = '';
-	$translations = json_decode(file_get_contents(plugins_url() . '/kyani-custom-plugin/assets/data/translations/' . $current_site_country_code . '.json'));
+	$locale_translations = json_decode(file_get_contents(plugins_url() . '/kyani-custom-plugin/assets/data/translations/us.json'));
 
 	// GET current locale for country
 	global $TRP_LANGUAGE;
