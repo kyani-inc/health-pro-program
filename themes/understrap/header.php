@@ -95,14 +95,13 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 								width=<?php echo esc_attr($logoWidth) ?>></a>
 					<ul class="navbar-nav desktop-only">
 					<?php echo do_shortcode('[replicatedDisplay]'); ?>
-					<?php echo do_shortcode('[navShopLink]'); ?>
 					</ul>
 					<?php wp_nav_menu(
 							array(
 									'theme_location' => 'primary',
 									'container_class' => 'collapse navbar-collapse',
 									'container_id' => 'navbarNavDropdown ',
-									'menu_class' => 'navbar-nav ml-auto desktop-only',
+									'menu_class' => 'navbar-nav mr-auto desktop-only',
 									'fallback_cb' => '',
 									'menu_id' => 'main-menu',
 									'depth' => 3,

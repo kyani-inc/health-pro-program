@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 <html <?php language_attributes(); ?><?php wpex_schema_markup( 'html' ); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-	
+
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <?php wp_head(); ?>
 </head>
