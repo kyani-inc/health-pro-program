@@ -120,6 +120,9 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 									'walker' => new Custom_WP_Bootstrap_Navwalker()
 							)
 					); ?>
+					<ul class="navbar-nav desktop-only ml-auto">
+					<?php echo do_shortcode("[woo_cart_but]"); ?>
+					</ul>
 					<a class="navbar-toggler nav-button ml-auto mobile-only"><span
 								id="nav-icon3">
 							<span class="side-panel-btn"></span>

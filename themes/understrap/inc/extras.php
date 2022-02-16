@@ -148,3 +148,56 @@ if ( ! function_exists( 'understrap_default_body_attributes' ) ) {
 	}
 }
 add_filter( 'understrap_body_attributes', 'understrap_default_body_attributes' );
+
+//code for cart addon
+add_shortcode('woo_cart_but', 'woo_cart_but');
+/**
+ * Create Shortcode for WooCommerce Cart Menu Item
+ */
+function woo_cart_but()
+{
+	ob_start();
+	$cart_count = WC()
+			->cart->cart_contents_count; // Set variable for cart item count
+	$cart_url = wc_get_cart_url(); // Set Cart URL
+
+	?>
+	<a class="menu-item cart-contents" href="<?php echo $cart_url; ?>" title="My Basket">
+		<?php
+		if ($cart_count > 0)
+		{
+			?>
+			<span class="cart-contents-count"><?php echo $cart_count; ?></span>
+			<?php
+		}
+		?>
+	</a>
+	<?php
+	return ob_get_clean();
+}
+
+//Add a filter to get the cart count
+add_filter('woocommerce_add_to_cart_fragments', 'woo_cart_but_count');
+/**
+ * Add AJAX Shortcode when cart contents update
+ */
+function woo_cart_but_count($fragments)
+{
+	ob_start();
+	$cart_count = WC()
+			->cart->cart_contents_count;
+	$cart_url = wc_get_cart_url();
+	?>
+	<a class="cart-contents menu-item" href="<?php echo $cart_url; ?>" title="<?php _e('View your shopping cart'); ?>">
+		<?php
+		if ($cart_count > 0)
+		{
+			?>
+			<span class="cart-contents-count"><?php echo $cart_count; ?></span>
+			<?php
+		}
+		?></a>
+	<?php
+	$fragments['a.cart-contents'] = ob_get_clean();
+	return $fragments;
+}
