@@ -24,9 +24,10 @@ add_filter('acf/settings/show_admin', '__return_false');
  */
 function add_rep_query_var($link) {
 	if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
-		$rep = explode(';', $_SERVER['HTTX_KYANI_REP'])[0];
+		$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
 		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO']. "://" . $_SERVER['HTTP_HOST'],"", $link );
-		return 'https://'.$rep.'.'.$_SERVER['HTTP_HOST'] . $uri;
+		$path = explode('/', $uri)[1];
+		return 'https://'.$rep.'.nitrohealthpro.com/' . $path;
 	}
 	return $link;
 }

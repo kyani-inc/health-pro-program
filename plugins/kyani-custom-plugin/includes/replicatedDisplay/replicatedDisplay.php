@@ -19,18 +19,7 @@ function replicated_display_shortcode()
 
 	// GET translations for current country
 	$locale_translations = '';
-	$translations = json_decode(file_get_contents(plugins_url() . '/kyani-custom-plugin/assets/data/translations/' . $current_site_country_code . '.json'));
-
-	// GET current locale for country
-	global $TRP_LANGUAGE;
-	$current_locale = $TRP_LANGUAGE;
-
-	// SET locale translations for current locale
-	foreach ($translations->locales as $locale) {
-		if ($locale->locale === $current_locale) {
-			$locale_translations = $locale->translations;
-		}
-	}
+	$translations = json_decode(file_get_contents(plugins_url() . '/kyani-custom-plugin/assets/data/translations/us.json'));
 
 	// GET rep global
 	global $rep;
