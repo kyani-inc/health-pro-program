@@ -18,8 +18,7 @@ function replicated_display_shortcode()
 	}
 
 	// GET translations for current country
-	$locale_translations = '';
-	$translations = json_decode(file_get_contents(plugins_url() . '/kyani-custom-plugin/assets/data/translations/us.json'));
+	$locale_translations = json_decode(file_get_contents(plugins_url() . '/kyani-custom-plugin/assets/data/translations/us.json'));
 
 	// GET rep global
 	global $rep;
