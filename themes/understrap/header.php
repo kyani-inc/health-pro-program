@@ -90,7 +90,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 
 					<a href="<?php echo($homeLink != "" ? "//" . $homeLink : esc_url(home_url('/'))); ?>"
 					   class="navbar-brand"><img
-								src="<?php echo esc_url(bloginfo('template_directory') . "/images/" . $logoLink) ?>"
+								src="<?php echo esc_url(bloginfo('template_directory') . "/images/kyani-blue-logo.svg") ?>"
 								alt=""
 								width=<?php echo esc_attr($logoWidth) ?>></a>
 					<ul class="navbar-nav desktop-only">
@@ -108,6 +108,9 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 									'walker' => new Custom_WP_Bootstrap_Navwalker()
 							)
 					); ?>
+					<ul class="navbar-nav desktop-only ml-auto">
+						<a>Login</a>
+					</ul>
 					<a class="navbar-toggler nav-button ml-auto mobile-only"><span
 								id="nav-icon3">
 							<span class="side-panel-btn"></span>
