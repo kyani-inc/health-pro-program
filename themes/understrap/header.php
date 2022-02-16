@@ -87,7 +87,13 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 				<?php if ('container' === $container) : ?>
 				<div class="container">
 					<?php endif; ?>
-
+					<a class="navbar-toggler nav-button mr-auto mobile-only"><span
+								id="nav-icon3">
+							<span class="side-panel-btn"></span>
+							<span class="side-panel-btn"></span>
+							<span class="side-panel-btn"></span>
+							<span class="side-panel-btn"></span>
+							</span></a>
 					<a href="<?php echo($homeLink != "" ? "//" . $homeLink : esc_url(home_url('/'))); ?>"
 					   class="navbar-brand"><img
 								src="<?php echo esc_url(bloginfo('template_directory') . "/images/kyani-blue-logo.svg") ?>"
@@ -123,13 +129,6 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 					<ul class="navbar-nav desktop-only ml-auto">
 					<?php echo do_shortcode("[woo_cart_but]"); ?>
 					</ul>
-					<a class="navbar-toggler nav-button ml-auto mobile-only"><span
-								id="nav-icon3">
-							<span class="side-panel-btn"></span>
-							<span class="side-panel-btn"></span>
-							<span class="side-panel-btn"></span>
-							<span class="side-panel-btn"></span>
-							</span></a>
 					<?php if ('container' === $container) : ?>
 				</div>
 			<?php endif; ?>
