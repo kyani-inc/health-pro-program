@@ -26,7 +26,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	if (!($rep === "")) {
 		$logoLink = "kyani-blue-logo-bp.svg";
 		$logoWidth = "180";
-		$homeLink = $rep . '.' . $_SERVER['HTTP_HOST'] . get_blog_details(get_current_blog_id())->path;
+		$homeLink = $rep . '.nitrohealthpro.com/';
 	} else {
 		$logoLink = "kyani-blue-logo.svg";
 		$logoWidth = "80";
@@ -92,7 +92,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 					   class="navbar-brand"><img
 								src="<?php echo esc_url(bloginfo('template_directory') . "/images/kyani-blue-logo.svg") ?>"
 								alt=""
-								width="80"</a>
+								width="80"></a>
 					<ul class="navbar-nav desktop-only">
 					<?php echo do_shortcode('[replicatedDisplay]'); ?>
 					</ul>
