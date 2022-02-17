@@ -21,18 +21,8 @@ $container = get_theme_mod('understrap_container_type');
 
 		<div class="container" id="footer-full-content">
 
-			<div class="row footer-menu">
-
-				<?php dynamic_sidebar('footerfull'); ?>
-
-			</div>
-
 			<div class="row footer-logo">
 				<?php dynamic_sidebar('footerlogo') ?>
-			</div>
-
-			<div class="row footer-social-icons">
-				<?php dynamic_sidebar("footersocial") ?>
 			</div>
 
 			<div class="row footer-additional-text">
