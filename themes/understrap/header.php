@@ -58,10 +58,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?> onload="console.log('test');">
 
 <!-- Google Tag Manager (noscript) -->
-<noscript>
-	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P97Z6NN"
-			height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
+
 <!-- End Google Tag Manager (noscript) -->
 
 <?php do_action('wp_body_open'); ?>
