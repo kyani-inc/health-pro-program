@@ -598,6 +598,9 @@ html body {
 	text-align: center;
 	text-decoration: none;
 	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	a {
 	  color: #828282;
@@ -610,3 +613,6 @@ html body {
   }
 }
 
+.footer-widget-text {
+  max-width: 100% !important;
+}

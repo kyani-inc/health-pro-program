@@ -58,6 +58,42 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?> onload="console.log('test');">
 
 <!-- Google Tag Manager (noscript) -->
+<script>
+	function setCookie(sname, svalue, days) {
+		const d = new Date();
+		d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+		let expires = "expires="+d.toUTCString();
+		document.cookie = sname + "=" + svalue + ";" + expires + ";path=/;domain=nitrohealthpro.com";
+	}
+
+	function getCookie(sname) {
+		let name = sname + "=";
+		let sa = document.cookie.split(";");
+		for(let i = 0; i < sa.length; i++) {
+			let s = sa[i];
+			while (s.charAt(0) == " ") {
+				s = s.substring(1);
+			}
+			if (s.indexOf(name) == 0) {
+				return s.substring(name.length, s.length);
+			}
+		}
+		return "";
+	}
+
+	let host = window.location.host;
+	let subdomain = host.split(".")[0];
+	let path = window.location.pathname;
+	let sponsor = getCookie("sponsor");
+	if ((subdomain !== "nitrohealthpro") && (sponsor != subdomain)) {
+		setCookie("sponsor", subdomain, 5);
+	}
+
+	var url = window.location.search;
+	if(url.indexOf('?user=health-pro') !== -1) {
+		document.cookie="user=health-pro;expires=3600000";
+	}
+</script>
 
 <!-- End Google Tag Manager (noscript) -->
 
