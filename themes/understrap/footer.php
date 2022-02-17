@@ -29,7 +29,22 @@ $container = get_theme_mod('understrap_container_type');
 
 					<div class="site-info">
 
+						<div class="wrapper" id="wrapper-footer-full">
 
+							<div class="container" id="footer-full-content">
+
+								<div>
+								<div class="row footer-logo">
+									<?php dynamic_sidebar('footerlogo') ?>
+								</div>
+
+								<div class="row footer-additional-text">
+									<?php dynamic_sidebar('footertext') ?>
+								</div>
+								</div>
+							</div>
+
+						</div><!-- #wrapper-footer-full -->
 
 					</div><!-- .site-info -->
 

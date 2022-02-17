@@ -534,12 +534,14 @@ html body {
 }
 
 #wrapper-footer-full {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #F9F9F9;
 
-  .footer-menu {
-	margin-bottom: 90px;
+  #footer-full-content {
+	width: 1440px;
+	display: flex;
+	flex-direction: column;
   }
 
   .widget-title {
