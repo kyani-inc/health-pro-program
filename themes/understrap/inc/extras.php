@@ -201,3 +201,28 @@ function woo_cart_but_count($fragments)
 	$fragments['a.cart-contents'] = ob_get_clean();
 	return $fragments;
 }
+
+function wooc_extra_register_fields() {
+	global $wp_roles; ?>
+	<p class="form-row form-row-wide">
+		<label for="reg_billing_phone">Select Role</label>
+		<select name="role" class="input">
+			<?php
+			foreach ( $wp_roles->roles as $key=>$value ) {
+				// Exclude default roles such as administrator etc. Add your own
+				if ( ! in_array( $value['name'], [ 'Administrator', 'Author', 'Editor', 'Shop Manager' ] ) ){
+					echo '<option value="'.$key.'">'.$value['name'].'</option>';
+				}
+			}
+			?>
+		</select>
+	</p>
+	<?php
+}
+add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
+
+//saving role
+add_action( 'woocommerce_created_customer', 'update_user_role' );
+function update_user_role( $user_id ) {
+	$user_id = wp_update_user( array( 'ID' => $user_id, 'role' => $_POST['role'] ) );
+}
