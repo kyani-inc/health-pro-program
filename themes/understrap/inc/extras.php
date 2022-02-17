@@ -210,7 +210,7 @@ function wooc_extra_register_fields() {
 			<?php
 			foreach ( $wp_roles->roles as $key=>$value ) {
 				// Exclude default roles such as administrator etc. Add your own
-				if ( ! in_array( $value['name'], [ 'Administrator', 'Author', 'Editor', 'Shop Manager' ] ) ){
+				if ( ! in_array( $value['name'], [ 'Administrator', 'Author', 'Editor', 'Shop manager', 'Contributor', 'Subscriber' ] ) ){
 					echo '<option value="'.$key.'">'.$value['name'].'</option>';
 				}
 			}
