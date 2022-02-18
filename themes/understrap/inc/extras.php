@@ -205,8 +205,8 @@ function woo_cart_but_count($fragments)
 function wooc_extra_register_fields() {
 	global $wp_roles; ?>
 	<p class="form-row form-row-wide">
-		<label for="reg_billing_phone">Select Role</label>
-		<select name="role" class="input">
+		<label for="reg_role">Select Role</label>
+		<select id="reg_role" name="role" class="input">
 			<?php
 			foreach ( $wp_roles->roles as $key=>$value ) {
 				// Exclude default roles such as administrator etc. Add your own
@@ -216,6 +216,7 @@ function wooc_extra_register_fields() {
 			}
 			?>
 		</select>
+		<script></script>
 	</p>
 	<?php
 }
