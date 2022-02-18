@@ -27,6 +27,7 @@ $container = get_theme_mod('understrap_container_type');
 
 				<footer class="site-footer" id="colophon">
 
+
 					<div class="site-info">
 
 						<div class="wrapper" id="wrapper-footer-full">
@@ -34,13 +35,13 @@ $container = get_theme_mod('understrap_container_type');
 							<div class="container" id="footer-full-content">
 
 								<div>
-								<div class="row footer-logo">
-									<?php dynamic_sidebar('footerlogo') ?>
-								</div>
+									<div class="row footer-logo">
+										<?php dynamic_sidebar('footerlogo') ?>
+									</div>
 
-								<div class="row footer-additional-text">
-									<?php dynamic_sidebar('footertext') ?>
-								</div>
+									<div class="row footer-additional-text">
+										<?php dynamic_sidebar('footertext') ?>
+									</div>
 								</div>
 							</div>
 
@@ -59,8 +60,23 @@ $container = get_theme_mod('understrap_container_type');
 
 </div><!-- wrapper end -->
 
+
 </div><!-- #page we need this extra closing tag here -->
 
 </body>
 
 </html>
+
+<?php wp_footer();
+global $rep;
+if ($rep->rep_found()) {
+	$link = new ShopLink($rep->get_rep_id());
+}
+?>
+<script>
+	let shop = document.getElementsByClassName("nav-shoplink")[0].firstElementChild
+	shop.href = "<?php echo esc_url_raw( $link->get_all_products_link() ) ?>";
+</script>;
+<?php get_template_part('sidebar-templates/sidebar', 'footerfull'); ?>
+
+
