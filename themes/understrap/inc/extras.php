@@ -205,18 +205,11 @@ function woo_cart_but_count($fragments)
 function wooc_extra_register_fields() {
 	global $wp_roles; ?>
 	<p class="form-row form-row-wide">
-		<label for="reg_role">Select Role</label>
-		<select id="reg_role" name="role" class="input">
-			<?php
-			foreach ( $wp_roles->roles as $key=>$value ) {
-				// Exclude default roles such as administrator etc. Add your own
-				if ( ! in_array( $value['name'], [ 'Administrator', 'Author', 'Editor', 'Shop manager', 'Contributor', 'Subscriber' ] ) ){
-					echo '<option value="'.$key.'">'.$value['name'].'</option>';
-				}
-			}
-			?>
-		</select>
-		<script></script>
+		<input id="reg_role" name="role" class="input">
+		<script>	if (document.cookie.indexOf('user') > -1 ) {
+				document.getElementById("reg_role").value = "um_health-pro";
+
+			}</script>
 	</p>
 	<?php
 }
