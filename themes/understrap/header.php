@@ -91,8 +91,9 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 
 	var url = window.location.search;
 	if(url.indexOf('?user=health-pro') !== -1) {
-		document.cookie="user=health-pro;expires=3600000";
+		setCookie("user", "health-pro", 1);
 	}
+	
 </script>
 
 <!-- End Google Tag Manager (noscript) -->
