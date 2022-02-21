@@ -93,7 +93,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	if(url.indexOf('?user=health-pro') !== -1) {
 		setCookie("user", "health-pro", 1);
 	}
-	
+
 </script>
 
 <!-- End Google Tag Manager (noscript) -->
@@ -121,7 +121,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 				<?php if ('container' === $container) : ?>
 				<div class="container">
 					<?php endif; ?>
-					<a class="navbar-toggler nav-button mr-auto mobile-only"><span
+					<a class="navbar-toggler nav-button mobile-only"><span
 								id="nav-icon3">
 							<span class="side-panel-btn"></span>
 							<span class="side-panel-btn"></span>
@@ -133,7 +133,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 								src="<?php echo esc_url(bloginfo('template_directory') . "/images/kyani-blue-logo.svg") ?>"
 								alt=""
 								width="80"></a>
-					<ul class="navbar-nav desktop-only">
+					<ul class="navbar-nav rep-nav">
 					<?php echo do_shortcode('[replicatedDisplay]'); ?>
 					</ul>
 					<?php wp_nav_menu(
@@ -160,7 +160,10 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 									'walker' => new Custom_WP_Bootstrap_Navwalker()
 							)
 					); ?>
-					<ul class="navbar-nav desktop-only ml-auto">
+					<ul class="navbar-nav cart-nav">
+						<a href="nitrohealthpro.com/cart/" class="mobile-only">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
 					<?php echo do_shortcode("[woo_cart_but]"); ?>
 					</ul>
 					<?php if ('container' === $container) : ?>

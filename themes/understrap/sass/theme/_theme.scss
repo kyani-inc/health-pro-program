@@ -27,6 +27,7 @@ html body {
   background-color: $colorWhite;
   padding-left: 38px;
   padding-right: 38px;
+  justify-content: left;
 
   .navbar-nav {
 	font-size: 16px;
@@ -615,4 +616,14 @@ html body {
 
 .footer-widget-text {
   max-width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .rep-nav {
+	width: 50%;
+  }
+
+  .cart-nav {
+	width: 5%;
+  }
 }
