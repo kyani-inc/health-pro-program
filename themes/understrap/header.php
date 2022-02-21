@@ -162,7 +162,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 					); ?>
 					<ul class="navbar-nav cart-nav">
 						<a href="nitrohealthpro.com/cart/" class="mobile-only">
-							<i class="fas fa-shopping-cart"></i>
+							<i class="fas fa-shopping-basket"></i>
 						</a>
 					<?php echo do_shortcode("[woo_cart_but]"); ?>
 					</ul>
