@@ -25,8 +25,7 @@ html body {
 .kyani-nav {
   height: 80px;
   background-color: $colorWhite;
-  padding-left: 38px;
-  padding-right: 38px;
+  padding: 15px;
   justify-content: left;
 
   .navbar-nav {
@@ -327,7 +326,7 @@ html body {
   display: block;
   padding: 12px 0;
   border: none;
-  margin-left: 12px !important;
+  margin-right: 12px !important;
 }
 
 .nav-button #nav-icon3 {
@@ -412,7 +411,7 @@ html body {
 	}
 
 	.nav-link {
-	  padding: 15px 38px;
+	  padding: 15px;
 	  display: flex;
 	  justify-content: space-between;
 	  min-height: 50px;
@@ -620,7 +619,7 @@ html body {
 
 @media (max-width: 768px) {
   .rep-nav {
-	width: 50%;
+	width: 49%;
   }
 
   .cart-nav {
