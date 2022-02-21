@@ -633,4 +633,12 @@ html body {
   .cart-nav a {
 	color: #183C65 !important;
   }
+
+  .cart-contents {
+	margin-top: -20px !important;
+
+	.cart-contents-count {
+	  transform: translateY(50%) translateX(85%);
+	}
+  }
 }
