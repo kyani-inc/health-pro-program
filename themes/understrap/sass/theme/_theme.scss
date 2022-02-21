@@ -622,8 +622,15 @@ html body {
 	width: 49%;
   }
 
+  .rep-nav li a{
+	font-size: 14px
+  }
+
   .cart-nav {
 	width: 5%;
+  }
+
+  .cart-nav a {
 	color: #183C65 !important;
   }
 }
