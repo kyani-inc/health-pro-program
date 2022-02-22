@@ -310,7 +310,7 @@ function codeithub_product_price_recalculate() {
          var qty = $(this).val();
          var price = '" . esc_js( $price ) . "';
          var price_string = (price*qty).toFixed(2);
-         $('#subtot > span').html('" . esc_js( $currency ) . "'+price_string);
+         $('#subtot > span').html('(" . esc_js( $currency ) . "'+price_string + ')');
       }).change();
    " );
 }
