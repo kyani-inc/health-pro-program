@@ -62,11 +62,6 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 	<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 
 </form>
-<script>
-	if (document.cookie.indexOf('sponsor') > -1 ) {
-		document.getElementById("billing_sponsor").value = sponsor;
-	}
-</script>
 
 <?php
 do_action( 'woocommerce_after_checkout_form', $checkout );
