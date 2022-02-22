@@ -30,7 +30,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 	if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 	$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 	?>
-	<section style="display: flex; border: 1px solid cornflowerblue; width: 50%;">
+	<section style="display: flex;">
 		<div>
 			<span class="product-thumbnail">
 				<?php

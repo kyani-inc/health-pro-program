@@ -103,7 +103,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<?php if ((is_page() || is_singular())) : ?>
-	<div id="wrapper-navbar" style="display: none">
+	<div id="wrapper-navbar">
 
 		<a class="skip-link sr-only sr-only-focusable"
 		   href="#content"><?php esc_html_e('Skip to content', 'understrap'); ?></a>
