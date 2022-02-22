@@ -303,7 +303,6 @@ add_action( 'woocommerce_after_add_to_cart_button', 'Codeithub_product_price_rec
 
 function codeithub_product_price_recalculate() {
 	global $product;
-	echo '<div style="display:inline-block;">Total: <span></span></div>';
 	$price = $product->get_price();
 	$currency = get_woocommerce_currency_symbol();
 	wc_enqueue_js( "
