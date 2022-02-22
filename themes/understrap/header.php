@@ -161,9 +161,9 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 							)
 					); ?>
 					<ul class="navbar-nav cart-nav">
-						<a href="nitrohealthpro.com/cart/" class="mobile-only">
+						<span class="mobile-only">
 							<i class="fas fa-shopping-basket"></i>
-						</a>
+						</span>
 					<?php echo do_shortcode("[woo_cart_but]"); ?>
 					</ul>
 					<?php if ('container' === $container) : ?>
@@ -173,9 +173,6 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 			<?php endif; ?>
 				<div class="main-menu" id="side-panel-menu">
 					<div class="main-menu-container flex-column d-flex">
-						<ul class="nav flex-column">
-						<?php echo do_shortcode('[replicatedDisplayMobile]'); ?>
-						</ul>
 						<?php
 						wp_nav_menu(array(
 								'theme_location' => 'mobile',
