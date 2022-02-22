@@ -642,3 +642,23 @@ html body {
 	}
   }
 }
+
+
+/*Woocommerce Quantity Input */
+.single_add_to_cart_button {
+  width: calc(100% - 125px);
+}
+
+.quantity {
+
+  input {
+	background: none;
+	border: 1px solid #007DC1;
+  }
+  .minus {
+	margin-right: -5px;
+  }
+  .plus {
+	margin-left: -5px;
+  }
+}
