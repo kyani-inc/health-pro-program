@@ -19,7 +19,7 @@ $colorWhite: #F1F3F5;
 }
 
 html body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .kyani-nav {
@@ -759,6 +759,64 @@ html body {
 		  }
 		}
 	  }
+	}
+  }
+}
+
+/* Woo Login */
+.woocommerce-privacy-policy-text {
+  display: none;
+}
+
+.woocommerce-form-register, .woocommerce-form-login {
+  border: none !important;
+
+  label {
+	font-weight: 600 !important;
+	color: #212022 !important;
+	font-size: 18px;
+  }
+
+  input {
+	border: 1px solid #e5e5e5 !important;
+	padding: 16px 24px !important;
+  }
+}
+
+.show-password-input {
+  display: none !important;
+}
+
+.woocommerce-form-register__submit {
+  background-color: #007DC1 !important;
+  margin-top: 15px !important;
+  color: #fff !important;
+  padding: 18px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  border-radius: 4px !important;
+}
+
+.woocommerce-form-login__submit {
+  background-color: #fff !important;
+  color: #007DC1 !important;
+  border: 1px solid #007DC1 !important;
+  padding: 18px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  border-radius: 4px !important;
+}
+
+/*Woo Checkout*/
+.woocommerce-billing-fields {
+  h4 {
+	margin-top: 30px !important;
+  }
+  .woocommerce-input-wrapper {
+	display: flex;
+
+	input[type=radio] {
+	  margin: 9px;
 	}
   }
 }

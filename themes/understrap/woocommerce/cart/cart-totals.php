@@ -16,7 +16,8 @@
  */
 
 defined( 'ABSPATH' ) || exit;
-
+$price = WC()->cart->total;
+$currency = get_woocommerce_currency_symbol();
 ?>
 <div class="cart_totals <?php echo ( WC()->customer->has_calculated_shipping() ) ? 'calculated_shipping' : ''; ?>">
 
@@ -104,7 +105,11 @@ defined( 'ABSPATH' ) || exit;
 	</table>
 
 	<div class="wc-proceed-to-checkout">
+
 		<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
+		<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="btn btn-primary mobile-checkout-btn checkout-button wc-forward mobile-only">
+			<?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?> <span>(<?php echo $currency . ' ' . $price ?>)</span>
+		</a>
 	</div>
 
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>
