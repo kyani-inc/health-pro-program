@@ -30,8 +30,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 	if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 	$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 	?>
-	<section style="display: flex;">
-		<div>
+	<section class="cart-products-table">
+		<div class="cart-product-thumbnail-section">
 			<span class="product-thumbnail">
 				<?php
 				$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
@@ -44,8 +44,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 				?>
 			</span>
 		</div>
-		<div>
-			<span class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+		<div class="cart-product-info-section">
+			<h2 class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 				<?php
 				if ( ! $product_permalink ) {
 					echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
@@ -63,8 +63,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 					echo wp_kses_post( apply_filters( 'woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>', $product_id ) );
 				}
 				?>
-			</span>
-			<span class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
+			</h2>
+			<span class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">Price:
 				<?php
 				echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				?>
@@ -91,7 +91,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 				?>
 			</span>
 		</div>
-		<div>
+		<div class="cart-remove-product-section">
 			<span class="product-remove">
 				<?php
 				echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
