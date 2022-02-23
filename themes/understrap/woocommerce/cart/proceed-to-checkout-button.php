@@ -19,8 +19,11 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
+$price = WC()->cart->total;
+$currency = get_woocommerce_currency_symbol();
 ?>
 
+
 <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="btn btn-primary btn-lg btn-block">
-	<?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?>
+	<?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?> <span>(<?php echo $currency . ' ' . $price ?>)</span>
 </a>

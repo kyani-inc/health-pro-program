@@ -1,10 +1,12 @@
 <?php
 $cart_count = WC()
 		->cart->cart_contents_count;
+$price = WC()->cart->total;
+$currency = get_woocommerce_currency_symbol();
 ?>
 <h2 class="cart-product-total-header">Total: <?php echo $cart_count ?> Products</h2>
 <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="btn btn-primary mobile-checkout-btn checkout-button wc-forward mobile-only">
-	<?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?>
+	<?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?> <span>(<?php echo $currency . ' ' . $price ?>)</span>
 </a>
 <?php
 /**
