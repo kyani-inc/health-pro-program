@@ -692,6 +692,9 @@ html body {
 	.product-name {
 	  font-size: 24px;
 	  font-weight: 400;
+	  a {
+		color: #000 !important;
+	  }
 	}
 
 	.product-price {
@@ -704,7 +707,7 @@ html body {
 	  .input-text {
 		border: 1px solid #007DC1 !important;
 		text-align: center !important;
-		padding: 22px 0 !important;
+		padding: 21px 0 23px !important;
 	  }
 	}
   }
