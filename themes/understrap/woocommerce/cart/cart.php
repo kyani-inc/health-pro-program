@@ -1,4 +1,12 @@
 <?php
+$cart_count = WC()
+		->cart->cart_contents_count;
+?>
+<h2 class="cart-product-total-header">Total: <?php echo $cart_count ?> Products</h2>
+<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="btn btn-primary mobile-checkout-btn checkout-button wc-forward mobile-only">
+	<?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?>
+</a>
+<?php
 /**
  * Cart Page
  *
@@ -32,6 +40,42 @@ do_action( 'woocommerce_before_cart' ); ?>
 	?>
 	<section class="cart-products-table">
 		<div class="cart-product-thumbnail-section">
+			<div class="mobile-top-section mobile-only">
+			<h2 class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+				<?php
+				if ( ! $product_permalink ) {
+					echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
+				} else {
+					echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_name() ), $cart_item, $cart_item_key ) );
+				}
+
+				do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
+
+				// Meta data.
+				echo wc_get_formatted_cart_item_data( $cart_item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
+				// Backorder notification.
+				if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
+					echo wp_kses_post( apply_filters( 'woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>', $product_id ) );
+				}
+				?>
+			</h2>
+			<span class="product-remove">
+				<?php
+				echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+						'woocommerce_cart_item_remove_link',
+						sprintf(
+								'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
+								esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
+								esc_html__( 'Remove this item', 'woocommerce' ),
+								esc_attr( $product_id ),
+								esc_attr( $_product->get_sku() )
+						),
+						$cart_item_key
+				);
+				?>
+			</span>
+			</div>
 			<span class="product-thumbnail">
 				<?php
 				$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
@@ -45,7 +89,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			</span>
 		</div>
 		<div class="cart-product-info-section">
-			<h2 class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+			<h2 class="product-name desktop-only" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 				<?php
 				if ( ! $product_permalink ) {
 					echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
@@ -92,7 +136,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			</span>
 		</div>
 		<div class="cart-remove-product-section">
-			<span class="product-remove">
+			<span class="product-remove desktop-only">
 				<?php
 				echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'woocommerce_cart_item_remove_link',
