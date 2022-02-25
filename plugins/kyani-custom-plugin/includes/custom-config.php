@@ -27,7 +27,8 @@ function add_rep_query_var($link) {
 		$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
 		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO']. "://" . $_SERVER['HTTP_HOST'],"", $link );
 		$path = explode('/', $uri)[1];
-		return 'https://'.$rep.'.nitrohealthpro.com/' . $path;
+		$path2 = explode('/', $uri)[2];
+		return 'https://'.$rep.'.nitrohealthpro.com/' . $path . '/' . $path2;
 	}
 	return $link;
 }
