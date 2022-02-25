@@ -623,7 +623,10 @@ html body {
   }
 
   .rep-nav li a{
-	font-size: 14px
+	font-size: 14px;
+		span {
+	  	font-size: 14px;
+	}
   }
 
   .cart-nav {
@@ -651,12 +654,12 @@ html body {
   }
 
   .rep-nav li a{
-	font-size: 12px
+	font-size: 12px;
+	span {
+	  font-size: 12px;
+	}
   }
 
-  .cart-nav {
-	width: 5%;
-  }
 
   .cart-nav a {
 	color: #183C65 !important;
