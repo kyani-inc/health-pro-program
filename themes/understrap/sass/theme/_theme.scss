@@ -643,6 +643,31 @@ html body {
   }
 }
 
+@media (max-width: 400px) {
+  .rep-nav {
+	width: 40%;
+  }
+
+  .rep-nav li a{
+	font-size: 12px
+  }
+
+  .cart-nav {
+	width: 5%;
+  }
+
+  .cart-nav a {
+	color: #183C65 !important;
+  }
+
+  .cart-contents {
+	margin-top: -20px !important;
+
+	.cart-contents-count {
+	  transform: translateY(50%) translateX(85%);
+	}
+  }
+}
 
 /*Woocommerce Quantity Input */
 .single_add_to_cart_button {

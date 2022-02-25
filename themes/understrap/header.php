@@ -164,7 +164,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 					); ?>
 					<ul class="navbar-nav cart-nav">
 						<span class="mobile-only">
-							<i class="fas fa-shopping-basket"></i>
+							<a href="<?php echo wc_get_cart_url(); ?>"><i class="fas fa-shopping-basket"></i></a>
 						</span>
 					<?php echo do_shortcode("[woo_cart_but]"); ?>
 					</ul>

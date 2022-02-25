@@ -28,9 +28,25 @@ function replicated_display_shortcode()
 		if ($rep->rep_found()) {
 			$replicated_display = '<li class="nav-item"><a class="repDropdown nav-link" onclick="toggleRepDisplay()">You\'re Shopping With ' . $rep->get_rep_name() . '</a></li>';
 
-			$replicated_display .= '<div id="repDisplay" style="display: none;" class="col-12"><div class="col-7 row d-flex justify-content-center p-5">
+			$replicated_display .= '<div id="repDisplay" style="display: none;" class="col-12"><div class="col-7 row d-flex justify-content-center p-5 desktop-only">
 								  <div class="col-2 col-md-5 col-lg-2 col-xl-2 p-3 text-right"><img src="' . $rep->get_rep_image() . '" class="repImage"></div>
 								  <div class="col-10 col-md-7 col-lg-10 col-xl-10 p-3">
+																<h2 class="repName">' . $rep->get_rep_name() . '</h2>
+																<p class="repInfo">' . $locale_translations->ibp . '<br>
+																ID: ' . $rep->get_rep_id() . '<br>
+																<a href="mailto:' . $rep->get_rep_email() . '">' . $rep->get_rep_email() . '</a></p>
+																<h3 class="repBioView" onclick="toggleBio()"><span id="viewBio">' . $locale_translations->view_bio . '</span><span id="hideBio" style="display: none;">' . $locale_translations->hide_bio . '</span></h3><div id="repBio" style="display: none;">';
+			if(!empty($rep->get_rep_description())) {
+				$replicated_display .= '<h4>' . $locale_translations->about_me . '</h4>' . $rep->get_rep_description() . '<hr>';
+			}
+			if ($locale_translations->disclaimer) {
+				$replicated_display .=  '<p class="repDisclaimer">' . $locale_translations->disclaimer . '</p>';
+			};
+			$replicated_display .= '</div><button class="repJoin"><a href="' . $rep->get_rep_join_link() . '" target="_blank">' . $locale_translations->join_team . '</a></button>';
+			$replicated_display .= '</div></div>';
+			$replicated_display .= '<div class="justify-content-center p-5 mobile-only">
+								  <div class="text-center"><img src="' . $rep->get_rep_image() . '" class="repImage"></div>
+								  <div class="text-center">
 																<h2 class="repName">' . $rep->get_rep_name() . '</h2>
 																<p class="repInfo">' . $locale_translations->ibp . '<br>
 																ID: ' . $rep->get_rep_id() . '<br>
