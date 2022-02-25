@@ -768,13 +768,31 @@ html body {
   display: none;
 }
 
-.woocommerce-form-register, .woocommerce-form-login {
+.woocommerce-form-register, .woocommerce-form-login, .woocommerce-billing-fields {
   border: none !important;
+
+  h4 {
+	color: #002857;
+	font-size: 24px;
+	weight: 400;
+	padding-top: 15px;
+	&:first-of-type {
+	  padding: 0px;
+	}
+  }
+
+  h3 {
+	display: none;
+  }
 
   label {
 	font-weight: 600 !important;
 	color: #212022 !important;
 	font-size: 18px;
+
+	abbr {
+	  display: none;
+	}
   }
 
   input {
@@ -808,10 +826,7 @@ html body {
 }
 
 /*Woo Checkout*/
-.woocommerce-billing-fields {
-  h4 {
-	margin-top: 30px !important;
-  }
+.woocommerce-billing-fields, {
   .woocommerce-input-wrapper {
 	display: flex;
 

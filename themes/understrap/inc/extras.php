@@ -204,7 +204,7 @@ function woo_cart_but_count($fragments)
 
 function wooc_extra_register_fields() {
 	global $wp_roles; ?>
-		<input class="invisible" id="reg_role" name="role" class="input">
+		<input class="invisible" id="reg_role" name="role" class="input" value="customer">
 		<script>	if (document.cookie.indexOf('user') > -1 ) {
 				document.getElementById("reg_role").value = "um_health-pro";
 
@@ -313,3 +313,15 @@ function codeithub_product_price_recalculate() {
    " );
 }
 
+add_filter( 'woocommerce_checkout_fields', 'custom_override_checkout_fields' );
+function custom_override_checkout_fields( $fields ) {
+	if( current_user_can('customer') ){
+		unset($fields['billing']['billing_company']);
+		unset($fields['billing']['billing_dob']);
+		unset($fields['billing']['billing_tax']);
+		unset($fields['billing']['billing_site']);
+		unset($fields['billing']['billing_health_pro_agreement_heading']);
+		unset($fields['billing']['billing_health_pro_agreement']);
+	}
+	return $fields;
+}
