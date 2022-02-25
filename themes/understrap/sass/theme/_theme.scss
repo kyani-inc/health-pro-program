@@ -835,3 +835,13 @@ html body {
 	}
   }
 }
+
+@media (max-width: 768px) {
+  .checkout-half {
+	width: 100% !important;
+  }
+
+  .woocommerce-checkout {
+	flex-direction: column;
+  }
+}
