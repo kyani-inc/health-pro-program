@@ -107,9 +107,6 @@ $currency = get_woocommerce_currency_symbol();
 	<div class="wc-proceed-to-checkout">
 
 		<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
-		<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="btn btn-primary mobile-checkout-btn checkout-button wc-forward mobile-only">
-			<?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?> <span>(<?php echo $currency . ' ' . $price ?>)</span>
-		</a>
 	</div>
 
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>
