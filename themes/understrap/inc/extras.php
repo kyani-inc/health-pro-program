@@ -345,3 +345,9 @@ function cart_update_qty_script() {
 	<?php
 	endif;
 }
+
+// Shortcode to output custom PHP in Elementor
+function wpc_elementor_shortcode( $atts ) {
+	echo woocommerce_template_single_add_to_cart();
+}
+add_shortcode( 'woocommerce_single_add_to_cart', 'wpc_elementor_shortcode');
