@@ -27,7 +27,8 @@ function add_rep_query_var($link) {
 		$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
 		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO']. "://" . $_SERVER['HTTP_HOST'],"", $link );
 		$path = str_replace('https/', '', $uri);
-		return 'https://'.$rep.'.nitrohealthpro.com/' . $uri;
+		$pathfin = substr_replace($path, $rep . '.nitrohealthpro.com/', 0, 0);
+		return 'https://' . $pathfin;
 	}
 	return $link;
 }
@@ -39,6 +40,7 @@ add_filter('tag_link', 'add_rep_query_var');
 add_filter('category_link', 'add_rep_query_var');
 add_filter('post_type_link', 'add_rep_query_var');
 add_filter('search_link', 'add_rep_query_var');
+add_filter('woocommerce_cart_item_permalink', 'add_rep_query_var');
 
 add_filter('feed_link', 'add_rep_query_var');
 add_filter('post_comments_feed_link', 'add_rep_query_var');
