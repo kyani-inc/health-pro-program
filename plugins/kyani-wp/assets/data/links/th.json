@@ -1,0 +1,22 @@
+{
+    "country": "THAILAND",
+    "default_rep": "157",
+    "nitro_nutrition": "967",
+    "sunrise": "4974-416THSR30/kyani-sunrise",
+    "nitro": "4976-416THFX56/kyani-nitro-fx-56ml",
+    "nitroxtreme": "",
+    "sunset": "4975-416THSS/kyani-sunset",
+    "hl5": "",
+    "fit20": "",
+    "core140": "",
+    "on": "",
+    "origin": "",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "th",
+        "language_code": "123",
+        "join_locale": "th-th"
+      }
+    ]
+  }

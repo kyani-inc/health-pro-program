@@ -1,0 +1,33 @@
+{
+  "locales": [
+    {
+      "locale": "de_CH",
+      "translations": {
+        "view_bio": "Bio anzeigen",
+        "hide_bio":  "Bio ausblenden",
+        "view_profile": "Vollständiges Profil anzeigen",
+        "hide_profile": "Vollständiges Profil ausblenden",
+        "ibp": "Unabhängiger Geschäftspartner",
+        "join_team": "Dem Team beitreten",
+        "shop_now": "Jetzt Kaufen",
+        "about_me": "Über mich",
+        "country": "Land"
+      }
+    },
+    {
+      "locale": "fr_FR",
+      "translations": {
+        "view_bio": "Voir la biographie",
+        "hide_bio": "Masquer la biographie",
+        "view_profile": "Voir le profil complet",
+        "hide_profile": "Masquer le profil complet",
+        "ibp": "Partenaire commercial indépendant",
+        "join_team": "Rejoindre une équipe",
+        "shop_now": "Achetez-le dès maintenant",
+        "about_me": "À propos de moi",
+        "country": "Pays"
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,22 @@
+{
+    "country": "UNITED KINGDOM",
+    "default_rep": "151",
+    "nitro_nutrition": "977",
+    "sunrise": "247ENSR30",
+    "nitro": "247ENFX56",
+    "nitroxtreme": "247ENXT56",
+    "sunset": "247ENSS",
+    "hl5": "247ENHL5P",
+    "fit20": "247ENFIT20",
+    "core140": "247ENCORECH",
+    "on": "247ENNOOTROPRG",
+    "origin": "247ENOPBSV",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "en_GB",
+        "language_code": "47",
+        "join_locale": "en-gb"
+      }
+    ]
+  }

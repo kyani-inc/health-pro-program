@@ -1,0 +1,22 @@
+{
+  "country": "MEXICO",
+  "default_rep": "155",
+  "nitro_nutrition": "",
+  "sunrise": "125ESSR30",
+  "nitro": "125ESFX56",
+  "nitroxtreme": "125ESXT56",
+  "sunset": "125ESSS",
+  "hl5": "125ESHL5P",
+  "fit20": "125ESFIT20",
+  "core140": "",
+  "on": "",
+  "origin": "",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "es_MX",
+      "language_code": "108",
+      "join_locale": "es-mx"
+    }
+  ]
+}

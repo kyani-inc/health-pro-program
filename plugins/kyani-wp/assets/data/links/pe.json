@@ -1,0 +1,22 @@
+{
+  "country": "PERU",
+  "default_rep": "155",
+  "nitro_nutrition": "",
+  "sunrise": "610ESSR30",
+  "nitro": "610ESFX56",
+  "nitroxtreme": "610ESXT56",
+  "sunset": "610ESSS",
+  "hl5": "610ESHL5P",
+  "fit20": "610ESFIT20",
+  "core140": "",
+  "on": "",
+  "origin": "",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "es_PE",
+      "language_code": "107",
+      "join_locale": "es-hn"
+    }
+  ]
+}

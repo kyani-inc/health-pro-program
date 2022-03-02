@@ -1,0 +1,30 @@
+{
+  "locales": [
+    {
+      "locale": "lv",
+      "translations": {
+        "view_bio": "Skatīt biogrāfiju",
+        "hide_bio": "Slēpt biogrāfiju",
+        "view_profile": "Skatīt pilnu profilu",
+        "hide_profile": "Slēpt pilnu profilu",
+        "ibp": "Neatkarīgs biznesa partneris",
+        "join_team": "Pievienojieties komandai",
+        "shop_now": "Pirkt tagad",
+        "about_me": "Par mani",
+        "country": "Valsts"
+      }
+    },
+    {
+      "locale": "en_GB",
+      "translations": {
+        "view_bio": "View Bio",
+        "hide_bio":  "Hide Bio",
+        "ibp": "Independent Business Partner",
+        "join_team": "Join Team",
+        "shop_now": "Shop Now",
+        "about_me": "About Me",
+        "country": "Country"
+      }
+    }
+  ]
+}

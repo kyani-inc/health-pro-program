@@ -1,0 +1,27 @@
+{
+    "country": "HUNGARY",
+    "default_rep": "151",
+    "nitro_nutrition": "959",
+    "sunrise": "220ENSR30",
+    "nitro": "220ENFX56",
+    "nitroxtreme": "220ENXT56",
+    "sunset": "220ENSS",
+    "hl5": "220ENHL5P",
+    "fit20": "220ENFIT20",
+    "core140": "220ENCORECH",
+    "on": "220ENNOOTROPRG",
+    "origin": "220ENOPBSV",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "hu_HU",
+        "language_code": "67",
+        "join_locale": "hu-hu"
+      },
+      {
+        "locale": "en_GB",
+        "language_code": "47",
+        "join_locale": "en-gb"
+      }
+    ]
+}

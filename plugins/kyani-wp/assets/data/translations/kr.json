@@ -1,0 +1,18 @@
+{
+  "locales": [
+    {
+      "locale": "ko_KR",
+      "translations": {
+        "view_bio": "약력보기",
+        "hide_bio": "약력 숨기기",
+        "view_profile": "전체 프로필보기",
+        "hide_profile": "전체 프로필 숨기기",
+        "ibp": "독립 비즈니스 파트너",
+        "join_team": "팀에 합류",
+        "shop_now": "지금 쇼핑",
+        "about_me": "나에 대해서",
+        "country": "국가"
+      }
+    }
+  ]
+}

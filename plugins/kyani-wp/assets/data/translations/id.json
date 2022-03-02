@@ -1,0 +1,18 @@
+{
+  "locales": [
+    {
+      "locale": "id_ID",
+      "translations": {
+        "view_bio": "Lihat Bio",
+        "hide_bio": "Sembunyikan Bio",
+        "view_profile": "Lihat Profil Lengkap",
+        "hide_profile": "Sembunyikan Profil Lengkap",
+        "ibp": "Mitra Bisnis Independen",
+        "join_team": "Bergabung dengan tim",
+        "shop_now": "Belanja Sekarang",
+        "about_me": "Tentang saya",
+        "country": "Negara"
+      }
+    }
+  ]
+}

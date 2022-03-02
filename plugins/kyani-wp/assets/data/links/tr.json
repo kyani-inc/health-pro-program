@@ -1,0 +1,22 @@
+{
+  "country": "TURKEY",
+  "default_rep": "",
+  "nitro_nutrition": "",
+  "sunrise": "245TRSR30",
+  "nitro": "245TRFX56",
+  "nitroxtreme": "245TRXT56",
+  "sunset": "245TRSS",
+  "hl5": "245TRHL5P",
+  "fit20": "245TRFIT20",
+  "core140": "245TRCORECH",
+  "on": "245TRNOOTROPRG",
+  "origin": "245TROPBSV",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "tr_TR",
+      "language_code": "124",
+      "join_locale": "tr-tr"
+    }
+  ]
+}

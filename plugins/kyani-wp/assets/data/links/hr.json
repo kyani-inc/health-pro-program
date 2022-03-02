@@ -1,0 +1,27 @@
+{
+    "country": "CROATIA",
+    "default_rep": "151",
+    "nitro_nutrition": "950",
+    "sunrise": "210HRSR30",
+    "nitro": "210HRFX56",
+    "nitroxtreme": "210HRXT56",
+    "sunset": "210HRSS",
+    "hl5": "210HRHL5P",
+    "fit20": "210HRFIT20",
+    "core140": "210HRCORECH",
+    "on": "210HRNOOTROPRG",
+    "origin": "210HROPBSV",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "hr",
+        "language_code": "32",
+        "join_locale": "hr-hr"
+      },
+      {
+        "locale": "en_GB",
+        "language_code": "47",
+        "join_locale": "en-gb"
+      }
+    ]
+  }

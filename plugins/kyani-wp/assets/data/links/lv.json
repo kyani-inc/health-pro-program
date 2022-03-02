@@ -1,0 +1,26 @@
+{
+  "country": "LATVIA",
+  "default_rep": "151",
+  "nitro_nutrition": "962",
+  "sunrise": "200ENSR30",
+  "nitro": "200ENFX56",
+  "nitroxtreme": "200ENXT56",
+  "sunset": "200ENSS",
+  "hl5": "200ENHL5P",
+  "fit20": "200ENFIT20",
+  "core140": "200ENCORECH",
+  "on": "200ENNOOTROPRG",
+  "origin": "200ENOPBSV",
+  "locales": [
+    {
+      "locale": "lv",
+      "language_code": "74",
+      "join_locale": "lv-lv"
+    },
+    {
+      "locale": "en_GB",
+      "language_code": "47",
+      "join_locale": "en-gb"
+    }
+  ]
+}

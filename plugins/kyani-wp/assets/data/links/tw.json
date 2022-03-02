@@ -1,0 +1,22 @@
+{
+  "country": "TAIWAN",
+  "default_rep": "160",
+  "nitro_nutrition": "",
+  "sunrise": "306ZHSR30",
+  "nitro": "306ZHFX56",
+  "nitroxtreme": "306ZHXT56",
+  "sunset": "306ZHSS",
+  "hl5": "",
+  "fit20": "",
+  "core140": "",
+  "on": "",
+  "origin": "",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "zh_TW",
+      "language_code": "31",
+      "join_locale": "zh-tw"
+    }
+  ]
+}

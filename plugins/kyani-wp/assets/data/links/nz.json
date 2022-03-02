@@ -1,0 +1,27 @@
+{
+  "country": "NEW ZEALAND",
+  "default_rep": "156",
+  "nitro_nutrition": "933",
+  "sunrise": "531ENSR30",
+  "nitro": "531ENFX56",
+  "nitroxtreme": "531ENXT56",
+  "sunset": "531ENSS",
+  "hl5": "531ENHL5P",
+  "fit20": "531ENFIT20",
+  "core140": "531ENCORECH",
+  "on": "531ENNOOTROPRG",
+  "origin": "531ENOPBSV",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "en_AU",
+      "language_code": "37",
+      "join_locale": "en-au"
+    },
+    {
+      "locale": "zh_HK",
+      "language_code": "-2",
+      "join_locale": "zh-au"
+    }
+  ]
+}

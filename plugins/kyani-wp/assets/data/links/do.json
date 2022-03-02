@@ -1,0 +1,22 @@
+{
+  "country": "DOMINICAN REPUBLIC",
+  "default_rep": "155",
+  "nitro_nutrition": "",
+  "sunrise": "116ESSR30",
+  "nitro": "116ESFX56",
+  "nitroxtreme": "116ESXT56",
+  "sunset": "116ESSS",
+  "hl5": "",
+  "fit20": "",
+  "core140": "",
+  "on": "",
+  "origin": "",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "es_DO",
+      "language_code": "104",
+      "join_locale": "es-do"
+    }
+  ]
+}

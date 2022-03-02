@@ -1,0 +1,30 @@
+{
+  "locales": [
+    {
+      "locale": "hu_HU",
+      "translations": {
+        "view_bio": "Bio megtekintése",
+        "hide_bio": "Bio elrejtése",
+        "view_profile": "Teljes profil megtekintése",
+        "hide_profile": "Teljes profil elrejtése",
+        "ibp": "Független üzleti partner",
+        "join_team": "Csatlakozni a csapathoz",
+        "shop_now": "Vásároljon most",
+        "about_me": "Rólam",
+        "country": "Ország"
+      }
+    },
+    {
+      "locale": "en_GB",
+      "translations": {
+        "view_bio": "View Bio",
+        "hide_bio":  "Hide Bio",
+        "ibp": "Independent Business Partner",
+        "join_team": "Join Team",
+        "shop_now": "Shop Now",
+        "about_me": "About Me",
+        "country": "Country"
+      }
+    }
+  ]
+}

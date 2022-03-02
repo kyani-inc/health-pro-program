@@ -1,0 +1,30 @@
+{
+  "locales": [
+    {
+      "locale": "da_DK",
+      "translations": {
+        "view_bio": "Se Bio",
+        "hide_bio": "Skjul Bio",
+        "view_profile": "Vis den fulde profil",
+        "hide_profile": "Skjul fuld profil",
+        "ibp": "Uafhængig forretningspartner",
+        "join_team": "Bliv medlem af teamet",
+        "shop_now": "Køb nu",
+        "about_me": "Om mig",
+        "country": "Land"
+      }
+    },
+    {
+      "locale": "en_GB",
+      "translations": {
+        "view_bio": "View Bio",
+        "hide_bio":  "Hide Bio",
+        "ibp": "Independent Business Partner",
+        "join_team": "Join Team",
+        "shop_now": "Shop Now",
+        "about_me": "About Me",
+        "country": "Country"
+      }
+    }
+  ]
+}

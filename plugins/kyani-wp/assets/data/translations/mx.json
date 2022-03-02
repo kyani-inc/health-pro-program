@@ -1,0 +1,19 @@
+{
+  "locales": [
+    {
+      "locale": "es_MX",
+      "translations": {
+        "view_bio": "Ver biografía",
+        "hide_bio": "Ocultar biografía",
+        "view_profile": "Ver todo el perfil",
+        "hide_profile": "Ocultar perfil completo",
+        "ibp": "Socio comercial independiente",
+        "join_team": "Unirse al equipo",
+        "shop_now": "Comprar ahora",
+        "about_me": "Sobre mí",
+        "disclaimer": "DESCARGO DE RESPONSABILIDAD: Los resultados no son típicos ni están garantizados y requieren mucho trabajo y habilidad. Al referir clientes, los Distribuidores pueden obtener ingresos suplementarios basados en ventas de productos. La mayoría de las personas se inscriben solo para comprar productos para uso personal y ganan poco o no ganan dinero. Para ver lo que es posible, visita a ingreso.kyani.com.<br><br>DESCARGO DE RESPONSABILIDAD: Productos de Kyani no son medicamentos, no se han aprobado por la FDA o ninguna agencia gubernamental, ni están diseñados para prevenir, aliviar, tratar o curar ninguna enfermedad, condición médica, trastorno o estado fisiológico. Kyani recomienda consultar a su médico antes de consumir cualquier producto. El consumo de este producto es responsabilidad de quien lo recomienda y de quien lo usa.",
+        "country": "País"
+      }
+    }
+  ]
+}

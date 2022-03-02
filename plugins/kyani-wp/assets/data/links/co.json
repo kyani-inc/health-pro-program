@@ -1,0 +1,22 @@
+{
+  "country": "COLOMBIA",
+  "default_rep": "155",
+  "nitro_nutrition": "",
+  "sunrise": "112ESSR30",
+  "nitro": "112ESFX56",
+  "nitroxtreme": "112ESXT56",
+  "sunset": "112ESSS",
+  "hl5": "",
+  "fit20": "",
+  "core140": "",
+  "on": "",
+  "origin": "",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "es_CO",
+      "language_code": "102",
+      "join_locale": "es-co"
+    }
+  ]
+}

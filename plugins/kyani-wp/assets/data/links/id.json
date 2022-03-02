@@ -1,0 +1,21 @@
+{
+  "country": "INDONESIA",
+  "default_rep": "165",
+  "nitro_nutrition": "",
+  "sunrise": "",
+  "nitro": "",
+  "nitroxtreme": "408IDXT56",
+  "sunset": "408IDSS",
+  "hl5": "",
+  "fit20": "",
+  "core140": "",
+  "on": "",
+  "origin": "",
+  "locales": [
+    {
+      "locale": "id_ID",
+      "language_code": "69",
+      "join_locale": "id-id"
+    }
+  ]
+}

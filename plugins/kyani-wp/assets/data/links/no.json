@@ -1,0 +1,27 @@
+{
+    "country": "NORWAY",
+    "default_rep": "151",
+    "nitro_nutrition": "968",
+    "sunrise": "234NOSR30",
+    "nitro": "234NOFX56",
+    "nitroxtreme": "234NOXT56",
+    "sunset": "234NOSS",
+    "hl5": "234NOHL5P",
+    "fit20": "234NOFIT20",
+    "core140": "234NOCORECH",
+    "on": "234NONOOTROPRG",
+    "origin": "234NOOPBSV",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "nb_NO",
+        "language_code": "81",
+        "join_locale": "nb-no"
+      },
+      {
+        "locale": "en_GB",
+        "language_code": "47",
+        "join_locale": "en-gb"
+      }
+    ]
+  }

@@ -1,0 +1,18 @@
+{
+  "locales": [
+    {
+      "locale": "fr_CA",
+      "translations": {
+        "view_bio": "Voir la biographie",
+        "hide_bio":  "Masquer la biographie",
+        "view_profile": "Voir le profil complet",
+        "hide_profile": "Masquer le profil complet",
+        "ibp": "Partenaire commercial indépendant",
+        "join_team": "Rejoindre une équipe",
+        "shop_now": "Achetez maintenant",
+        "about_me": "À propos de moi",
+        "country": "Pays"
+      }
+    }
+  ]
+}

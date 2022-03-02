@@ -1,0 +1,27 @@
+{
+    "country": "SWITZERLAND",
+    "default_rep": "151",
+    "nitro_nutrition": "976",
+    "sunrise": "244DESR30",
+    "nitro": "244DEFX56",
+    "nitroxtreme": "244DEXT56",
+    "sunset": "244DESS",
+    "hl5": "244DEHL5P",
+    "fit20": "244DEFIT20",
+    "core140": "244DECORECH",
+    "on": "244DENOOTROPRG",
+    "origin": "244DEOPBSV",
+    "restore": "",
+    "locales": [
+      {
+        "locale": "de_CH",
+        "language_code": "63",
+        "join_locale": "de-ch"
+      },
+      {
+        "locale": "fr_FR",
+        "language_code": "56",
+        "join_locale": "fr-ch"
+      }
+    ]
+  }

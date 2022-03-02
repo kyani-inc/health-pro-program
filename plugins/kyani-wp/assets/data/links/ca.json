@@ -1,0 +1,32 @@
+{
+  "country": "CANADA",
+  "default_rep": "157",
+  "nitro_nutrition": "929",
+  "sunrise": "109ENSR30",
+  "nitro": "109ENFX56",
+  "nitroxtreme": "109ENXT56",
+  "sunset": "109ENSS",
+  "hl5": "109ENHL5",
+  "fit20": "",
+  "core140": "",
+  "on": "",
+  "origin": "",
+  "restore": "",
+  "locales": [
+    {
+      "locale": "en_CA",
+      "language_code": "1",
+      "join_locale": "en-us"
+    },
+    {
+      "locale": "fr_CA",
+      "language_code": "54",
+      "join_locale": "fr-ca"
+    },
+    {
+      "locale": "zh_HK",
+      "language_code": "-3",
+      "join_locale": "zh-us"
+    }
+  ]
+}
