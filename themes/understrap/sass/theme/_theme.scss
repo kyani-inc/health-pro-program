@@ -763,6 +763,12 @@ html body {
   .cart-product-total-header {
 	font-size: 18px;
   }
+
+  td {
+	display:block;
+	box-sizing:border-box;
+	clear:both
+  }
   .cart-products-table {
 	flex-direction: column;
 	.cart-product-thumbnail-section, .cart-product-info-section, .cart-remove-product-section {

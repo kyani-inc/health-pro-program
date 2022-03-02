@@ -34,9 +34,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 				$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 				?>
 	<table class="woocommerce-cart-form__contents cart-products-table" cellspacing="0">
-		<tbody>
-				<tr class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-					<td class="cart-product-thumbnail-section">
+		<tbody class="w-100">
+				<tr class="d-block w-100 woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+					<td class="cart-product-thumbnail-section align-top">
 						<div class="mobile-top-section mobile-only">
 							<h2 class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 								<?php
@@ -86,7 +86,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			</span>
 					</td>
 
-					<td class="cart-product-info-section" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+					<td class="align-top cart-product-info-section" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 						<h2 class="product-name desktop-only" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 							<?php
 							if ( ! $product_permalink ) {
@@ -134,7 +134,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			</span>
 					</td>
 
-					<td class="cart-remove-product-section">
+					<td class="cart-remove-product-section align-top">
 <span class="product-remove desktop-only">
 				<?php
 				echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
