@@ -103,3 +103,37 @@ function set_rep() {
 }
 
 add_action('init', 'set_rep');
+
+function add_rep_query_var($link) {
+	if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
+		$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
+		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO']. "://" . $_SERVER['HTTP_HOST'],"", $link );
+		$path = str_replace('https/', '', $uri);
+		$pathfin = substr_replace($path, $rep . '.nitrohealthpro.com/', 0, 0);
+		return 'https://' . $pathfin;
+	}
+	return $link;
+}
+
+add_filter('page_link', 'add_rep_query_var');
+add_filter('post_link', 'add_rep_query_var');
+add_filter('term_link', 'add_rep_query_var');
+add_filter('tag_link', 'add_rep_query_var');
+add_filter('category_link', 'add_rep_query_var');
+add_filter('post_type_link', 'add_rep_query_var');
+add_filter('search_link', 'add_rep_query_var');
+add_filter('woocommerce_cart_item_permalink', 'add_rep_query_var');
+
+add_filter('feed_link', 'add_rep_query_var');
+add_filter('post_comments_feed_link', 'add_rep_query_var');
+add_filter('author_feed_link', 'add_rep_query_var');
+add_filter('category_feed_link', 'add_rep_query_var');
+add_filter('taxonomy_feed_link', 'add_rep_query_var');
+add_filter('search_feed_link', 'add_rep_query_var');
+
+add_filter('index_rel_link', 'add_rep_query_var');
+add_filter('parent_post_rel_link', 'add_rep_query_var');
+add_filter('previous_post_rel_link', 'add_rep_query_var');
+add_filter('next_post_rel_link', 'add_rep_query_var');
+add_filter('start_post_rel_link', 'add_rep_query_var');
+add_filter('end_post_rel_link', 'add_rep_query_var');

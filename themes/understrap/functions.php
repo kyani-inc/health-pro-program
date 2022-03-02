@@ -25,6 +25,7 @@ $understrap_includes = array(
 	'/class-custom-navwalker.php',
 	'/editor.php', // Load Editor functions.
 	'/deprecated.php', // Load deprecated functions.
+	'/woocommerce.php' // Woocommerce Functions
 );
 
 foreach ($understrap_includes as $file) {
