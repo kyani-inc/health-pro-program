@@ -326,4 +326,23 @@ function custom_override_checkout_fields( $fields ) {
 	return $fields;
 }
 
+add_action( 'wp_footer', 'cart_update_qty_script' );
+function cart_update_qty_script() {
+	if (is_cart()) :
+		?>
+		<script>
+			jQuery( 'div.woocommerce' ).on( 'change', '.qty', function () {
+				setTimeout(function() {
+					location.reload();
+				}, 2500);
+			} );
+			jQuery( '.product-remove a' ).on( 'click', function () {
+				setTimeout(function() {
+					location.reload();
+				}, 2500);
+			} );
+		</script>
+	<?php
+	endif;
+}
 
