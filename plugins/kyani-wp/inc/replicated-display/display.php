@@ -7,8 +7,8 @@ function replicated_display_shortcode()
 	$replicated_display = '';
 
 	// ENQUEUE files
-	wp_enqueue_style('replicatedDisplayStyle', plugins_url() . '/kyani-custom-plugin/includes/replicatedDisplay/assets/style.css');
-	wp_enqueue_script('replicatedDisplayScript', plugins_url() . '/kyani-custom-plugin/includes/replicatedDisplay/assets/script.js');
+	wp_enqueue_style('replicatedDisplayStyle', plugins_url() . '/kyani-wp/includes/replicatedDisplay/assets/style.css');
+	wp_enqueue_script('replicatedDisplayScript', plugins_url() . '/kyani-wp/includes/replicatedDisplay/assets/script.js');
 
 	// GET current country code
 	$current_site_id = get_current_blog_id();
@@ -18,7 +18,18 @@ function replicated_display_shortcode()
 	}
 
 	// GET translations for current country
-	$locale_translations = json_decode(file_get_contents(plugins_url() . '/kyani-custom-plugin/assets/data/translations/us.json'));
+	$locale_translations = json_decode(file_get_contents(plugins_url() . '/kyani-wp/assets/data/translations/us.json'));
+
+
+if (isset($_SERVER['HTTP_CLIENT_IP'])) $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+elseif (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+elseif (isset($_SERVER['HTTP_X_FORWARDED'])) $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+elseif (isset($_SERVER['HTTP_FORWARDED_FOR'])) $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+elseif (isset($_SERVER['HTTP_FORWARDED'])) $ipaddress = $_SERVER['HTTP_FORWARDED'];
+elseif (isset($_SERVER['REMOTE_ADDR'])) $ipaddress = $_SERVER['REMOTE_ADDR'];
+else $ipaddress = 'UNKNOWN'; // -> "Mountain View"
+$details = json_decode(file_get_contents("http://ipinfo.io/{$ipaddress}/json"));
+echo print_r($details);
 
 	// GET rep global
 	global $rep;
@@ -75,8 +86,8 @@ function replicated_display_mobile_shortcode()
 	$replicated_display = '';
 
 	// ENQUEUE files
-	wp_enqueue_style('replicatedDisplayStyle', plugins_url() . '/kyani-custom-plugin/includes/replicatedDisplay/assets/style.css');
-	wp_enqueue_script('replicatedDisplayScript', plugins_url() . '/kyani-custom-plugin/includes/replicatedDisplay/assets/script.js');
+	wp_enqueue_style('replicatedDisplayStyle', plugins_url() . '/kyani-wp/includes/replicatedDisplay/assets/style.css');
+	wp_enqueue_script('replicatedDisplayScript', plugins_url() . '/kyani-wp/includes/replicatedDisplay/assets/script.js');
 
 	// GET current country code
 	$current_site_id = get_current_blog_id();
@@ -87,7 +98,7 @@ function replicated_display_mobile_shortcode()
 
 	// GET translations for current country
 	$locale_translations = '';
-	$locale_translations = json_decode(file_get_contents(plugins_url() . '/kyani-custom-plugin/assets/data/translations/us.json'));
+	$locale_translations = json_decode(file_get_contents(plugins_url() . '/kyani-wp/assets/data/translations/us.json'));
 
 	// GET current locale for country
 	global $TRP_LANGUAGE;
