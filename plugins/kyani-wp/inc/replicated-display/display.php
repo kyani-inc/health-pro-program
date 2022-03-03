@@ -7,8 +7,8 @@ function replicated_display_shortcode()
 	$replicated_display = '';
 
 	// ENQUEUE files
-	wp_enqueue_style('replicatedDisplayStyle', plugins_url() . '/kyani-wp/includes/replicatedDisplay/assets/style.css');
-	wp_enqueue_script('replicatedDisplayScript', plugins_url() . '/kyani-wp/includes/replicatedDisplay/assets/script.js');
+	wp_enqueue_style('replicatedDisplayStyle', plugins_url() . '/kyani-wp/inc/replicated-display/assets/style.css');
+	wp_enqueue_script('replicatedDisplayScript', plugins_url() . '/kyani-wp/inc/replicated-display/assets/script.js');
 
 	// GET current country code
 	$current_site_id = get_current_blog_id();
@@ -75,8 +75,8 @@ function replicated_display_mobile_shortcode()
 	$replicated_display = '';
 
 	// ENQUEUE files
-	wp_enqueue_style('replicatedDisplayStyle', plugins_url() . '/kyani-wp/includes/replicatedDisplay/assets/style.css');
-	wp_enqueue_script('replicatedDisplayScript', plugins_url() . '/kyani-wp/includes/replicatedDisplay/assets/script.js');
+	wp_enqueue_style('replicatedDisplayStyle', plugins_url() . '/kyani-wp/inc/replicated-display/assets/style.css');
+	wp_enqueue_script('replicatedDisplayScript', plugins_url() . '/kyani-wp/inc/replicated-display/assets/script.js');
 
 	// GET current country code
 	$current_site_id = get_current_blog_id();
