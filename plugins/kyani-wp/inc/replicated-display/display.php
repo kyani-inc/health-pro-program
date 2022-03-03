@@ -20,17 +20,6 @@ function replicated_display_shortcode()
 	// GET translations for current country
 	$locale_translations = json_decode(file_get_contents(plugins_url() . '/kyani-wp/assets/data/translations/us.json'));
 
-
-if (isset($_SERVER['HTTP_CLIENT_IP'])) $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
-elseif (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
-elseif (isset($_SERVER['HTTP_X_FORWARDED'])) $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
-elseif (isset($_SERVER['HTTP_FORWARDED_FOR'])) $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
-elseif (isset($_SERVER['HTTP_FORWARDED'])) $ipaddress = $_SERVER['HTTP_FORWARDED'];
-elseif (isset($_SERVER['REMOTE_ADDR'])) $ipaddress = $_SERVER['REMOTE_ADDR'];
-else $ipaddress = 'UNKNOWN'; // -> "Mountain View"
-$details = json_decode(file_get_contents("http://ipinfo.io/{$ipaddress}/json"));
-echo print_r($details);
-
 	// GET rep global
 	global $rep;
 
