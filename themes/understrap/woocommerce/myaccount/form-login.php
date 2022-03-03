@@ -38,14 +38,14 @@ $col = 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ? 6 :
 				<label for="username"><?php esc_html_e( 'Username or email address', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
 				<input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="username" id="username" autocomplete="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" /><?php // @codingStandardsIgnoreLine ?>
 			</p>
-			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide d-flex flex-column">
 				<label for="password"><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
 				<input class="woocommerce-Input woocommerce-Input--text input-text form-control" type="password" name="password" id="password" autocomplete="current-password" />
 			</p>
 
 			<?php do_action( 'woocommerce_login_form' ); ?>
 
-			<p class="form-row">
+			<p class="form-row d-flex flex-column">
 				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme w-100">
 					<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></span>
 				</label>
@@ -88,7 +88,7 @@ $col = 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ? 6 :
 
 			<?php if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) : ?>
 
-				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide d-flex flex-column">
 					<label for="reg_password"><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
 					<input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="reg_password" autocomplete="new-password" />
 				</p>
@@ -101,7 +101,7 @@ $col = 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ? 6 :
 
 			<?php do_action( 'woocommerce_register_form' ); ?>
 
-			<p class="woocommerce-form-row form-row">
+			<p class="woocommerce-form-row form-row d-flex flex-column">
 				<?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
 				<button type="submit" class="woocommerce-form-register__submit btn btn-outline-primary" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>"><?php esc_html_e( 'Register', 'woocommerce' ); ?></button>
 			</p>
