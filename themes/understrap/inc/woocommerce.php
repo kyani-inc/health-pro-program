@@ -245,4 +245,49 @@ function save_extra_user_profile_fields( $user_id ) {
 	update_user_meta( $user_id, 'province', $_POST['province'] );
 	update_user_meta( $user_id, 'postalcode', $_POST['postalcode'] );
 }
-?>
+
+remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20 );
+add_action( 'woocommerce_after_order_notes', 'woocommerce_checkout_payment', 20 );
+
+function wc_discount_total() {
+	global $woocommerce;
+	$discount_total = 0;
+
+	foreach ( $woocommerce->cart->get_cart() as $cart_item_key => $values) {
+
+		$_product = $values['data'];
+
+		if ( $_product->is_on_sale() ) {
+			$regular_price = $_product->get_regular_price();
+			$sale_price = $_product->get_sale_price();
+			$discount = ($regular_price - $sale_price) * $values['quantity'];
+			$discount_total += $discount;
+		}
+	}
+	if ( $discount_total > 0 ) {
+		return
+				wc_price( $discount_total + $woocommerce->cart->discount_cart );
+	} else {
+		return NULL;
+	}
+}
+
+function wc_original_total_price() {
+	global $woocommerce;
+	$discount_total = 0;
+
+	foreach ( $woocommerce->cart->get_cart() as $cart_item_key => $values) {
+
+		$_product = $values['data'];
+
+		if ( $_product->is_on_sale() ) {
+			$regular_price = $_product->get_regular_price();
+			$sale_price = $_product->get_sale_price();
+			$discount = ($regular_price - $sale_price) * $values['quantity'];
+			$discount_total += $discount;
+		}
+	}
+
+	$original = $discount_total + WC()->cart->get_cart_contents_total();
+	return wc_price($original);
+}

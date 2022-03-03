@@ -18,7 +18,7 @@ $colorWhite: #F1F3F5;
   border-radius: 3px;
 }
 
-html body {
+html, body, * {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -888,3 +888,24 @@ html body {
 .e-cart__column-end {
   margin: 1rem;
 }
+
+//Checkout
+.woocommerce-checkout-review-order-table {
+  display: table;
+  thead {
+	th {
+	  font-size: 32px;
+	  font-weight: 700;
+	}
+  }
+  tr {
+	display: table-cell;
+	td {
+	  display: block;
+	  border-top: none !important;
+	  font-size: 18px;
+	}
+  }
+}
+
+
