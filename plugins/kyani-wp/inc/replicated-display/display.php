@@ -86,19 +86,7 @@ function replicated_display_mobile_shortcode()
 	}
 
 	// GET translations for current country
-	$locale_translations = '';
 	$locale_translations = json_decode(file_get_contents(plugins_url() . '/kyani-wp/assets/data/translations/us.json'));
-
-	// GET current locale for country
-	global $TRP_LANGUAGE;
-	$current_locale = $TRP_LANGUAGE;
-
-	// SET locale translations for current locale
-	foreach ($translations->locales as $locale) {
-		if ($locale->locale === $current_locale) {
-			$locale_translations = $locale->translations;
-		}
-	}
 
 	// GET rep global
 	global $rep;
