@@ -96,6 +96,8 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 		setCookie("user", "health-pro", 1);
 	}
 
+
+
 </script>
 
 <!-- End Google Tag Manager (noscript) -->
