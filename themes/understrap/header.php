@@ -52,12 +52,14 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	<script src="https://kit.fontawesome.com/0b3c9b4cc0.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 	<title><?php echo esc_html(wp_title()); ?> </title>
 </head>
 
-<body <?php body_class(); ?> <?php understrap_body_attributes(); ?> onload="console.log('test');">
+<body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 
 <!-- Google Tag Manager (noscript) -->
 <script>
