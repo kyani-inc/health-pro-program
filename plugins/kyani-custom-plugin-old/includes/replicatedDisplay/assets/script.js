@@ -24,5 +24,4 @@ function toggleBio() {
 
 $(document).on('click', function (e) {
   e.stopPropagation();
-  alert('test');
 });
