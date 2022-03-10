@@ -241,3 +241,14 @@ function wc_original_total_price() {
 	$original = $discount_total + WC()->cart->get_cart_contents_total();
 	return wc_price($original);
 }
+
+add_filter( 'wp_nav_menu_objects', 'my_dynamic_menu_items' );
+function my_dynamic_menu_items( $menu_items ) {
+	foreach ( $menu_items as $menu_item ) {
+		if ( strpos($menu_item->title, '#profile_name#') !== false) {
+			$menu_item->title =  str_replace("#profile_name#",  wp_get_current_user()->user_firstname . ' ' . wp_get_current_user()->user_lastname, $menu_item->title);
+		}
+	}
+
+	return $menu_items;
+}
