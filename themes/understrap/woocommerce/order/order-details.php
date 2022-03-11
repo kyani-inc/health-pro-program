@@ -58,7 +58,7 @@ if ( $show_downloads ) {
 		</tr>
 		<tr>
 			<td><?php echo $order->get_item_count();; ?></td>
-				<td><?php echo wc_original_total_price(); ?></td>
+				<td>$<?php echo $order->get_subtotal(); ?></td>
 			<?php if (wc_discount_total() !== NULL) { ?>
 				<td><?php echo wc_discount_total(); ?></td>
 			<?php } ?>
