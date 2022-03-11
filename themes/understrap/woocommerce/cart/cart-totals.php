@@ -38,11 +38,11 @@ $currency = get_woocommerce_currency_symbol();
 		</tr>
 		<tr>
 			<td><?php echo WC()->cart->cart_contents_count; ?></td>
-				<td><?php echo wc_original_total_price(); ?></td>
+				<td><?php echo WC()->cart->subtotal; ?></td>
 			<?php if (wc_discount_total() !== NULL) { ?>
 				<td><?php echo wc_discount_total(); ?></td>
 			<?php } ?>
-			<td>$<?php echo WC()->cart->get_cart_tax();; ?></td>
+			<td>$<?php echo WC()->cart->get_taxes_total(); ?></td>
 			<td><strong><?php echo WC()->cart->get_cart_total() ?></strong></td>
 		</tr>
 		<?php do_action( 'woocommerce_review_order_before_cart_contents' ); ?>
