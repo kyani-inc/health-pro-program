@@ -56,12 +56,12 @@ if ( $show_downloads ) {
 			<td class="product-total"><strong><?php esc_html_e( 'Total price', 'woocommerce' ); ?></strong></td>
 		</tr>
 		<tr>
-			<td><?php echo WC()->cart->cart_contents_count; ?></td>
+			<td><?php echo $order->get_item_count();; ?></td>
 			<?php if (wc_discount_total() !== NULL) { ?>
 				<td><?php echo wc_original_total_price(); ?></td>
 				<td><?php echo wc_discount_total(); ?></td>
 			<?php } ?>
-			<td><strong><?php echo WC()->cart->get_cart_total() ?></strong></td>
+			<td><strong><?php echo $order->get_order_item_totals() ?></strong></td>
 		</tr>
 		<?php do_action( 'woocommerce_review_order_before_cart_contents' ); ?>
 		</tbody>
