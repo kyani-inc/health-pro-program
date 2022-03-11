@@ -42,8 +42,26 @@ $currency = get_woocommerce_currency_symbol();
 			<?php if (wc_discount_total() !== NULL) { ?>
 				<td><?php echo wc_discount_total(); ?></td>
 			<?php } ?>
-			<td>$<?php echo WC()->cart->get_cart_contents_tax(); ?></td>
-			<td><strong><?php echo WC()->cart->get_cart_total() ?></strong></td>
+			<td>$<?php echo WC()->cart->get_cart_contents_tax() . '<br>'; ?></td>
+			<td><strong><?php echo WC()->cart->get_cart_contents_count() . '<br>';
+					echo WC()->cart->get_cart_subtotal() . '<br>';
+					echo WC()->cart->subtotal_ex_tax . '<br>';
+					echo WC()->cart->subtotal . '<br>';
+					echo WC()->cart->get_displayed_subtotal() . '<br>';
+					echo WC()->cart->get_taxes_total() . '<br>';
+					echo WC()->cart->get_shipping_total() . '<br>';
+					echo WC()->cart->get_coupons() . '<br>';
+					echo WC()->cart->get_coupon_discount_amount( 'coupon_code' ) . '<br>';
+					echo WC()->cart->get_fees() . '<br>';
+					echo WC()->cart->get_discount_total() . '<br>';
+					echo WC()->cart->get_total() . '<br>';
+					echo WC()->cart->total . '<br>';
+					echo WC()->cart->get_tax_totals() . '<br>';
+					echo WC()->cart->get_cart_contents_tax() . '<br>';
+					echo WC()->cart->get_fee_tax() . '<br>';
+					echo WC()->cart->get_discount_tax() . '<br>';
+					echo WC()->cart->get_shipping_total() . '<br>';
+					echo WC()->cart->get_shipping_taxes() . '<br>'; ?></strong></td>
 		</tr>
 		<?php do_action( 'woocommerce_review_order_before_cart_contents' ); ?>
 		</tbody>
