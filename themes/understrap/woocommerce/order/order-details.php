@@ -49,8 +49,8 @@ if ( $show_downloads ) {
 		</thead>
 		<tr>
 			<td class="product-name"><?php esc_html_e( 'Products', 'woocommerce' ); ?></td>
-			<?php if (wc_discount_total() !== NULL) { ?>
 				<td class="product-total"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></td>
+			<?php if (wc_discount_total() !== NULL) { ?>
 				<td class="product-total"><?php esc_html_e( 'Discount', 'woocommerce' ); ?></td>
 			<?php } ?>
 			<td class="product-total"><?php esc_html_e( 'Tax', 'woocommerce' ); ?></td>
@@ -58,11 +58,11 @@ if ( $show_downloads ) {
 		</tr>
 		<tr>
 			<td><?php echo $order->get_item_count();; ?></td>
-			<?php if (wc_discount_total() !== NULL) { ?>
 				<td><?php echo wc_original_total_price(); ?></td>
+			<?php if (wc_discount_total() !== NULL) { ?>
 				<td><?php echo wc_discount_total(); ?></td>
 			<?php } ?>
-			<td><?php echo $order->get_cart_tax(); ?></td>
+			<td>$<?php echo $order->get_total_tax(); ?></td>
 			<td><strong><?php echo $order->get_formatted_order_total(); ?></strong></td>
 		</tr>
 		<?php do_action( 'woocommerce_review_order_before_cart_contents' ); ?>

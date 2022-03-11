@@ -3562,3 +3562,122 @@ Stack trace:
 #7 {main}
   thrown in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php on line 78
 
+2022-03-11T18:04:40+00:00 CRITICAL Uncaught Error: Call to a member function get_all_products_link() on null in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php:78
+Stack trace:
+#0 /srv/www/kyanidev.health/public_html/wp-includes/template.php(770): require_once()
+#1 /srv/www/kyanidev.health/public_html/wp-includes/template.php(716): load_template()
+#2 /srv/www/kyanidev.health/public_html/wp-includes/general-template.php(92): locate_template()
+#3 /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/page.php(59): get_footer()
+#4 /srv/www/kyanidev.health/public_html/wp-includes/template-loader.php(106): include('/srv/www/kyanid...')
+#5 /srv/www/kyanidev.health/public_html/wp-blog-header.php(19): require_once('/srv/www/kyanid...')
+#6 /srv/www/kyanidev.health/public_html/index.php(17): require('/srv/www/kyanid...')
+#7 {main}
+  thrown in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php on line 78
+
+2022-03-11T18:05:00+00:00 CRITICAL Uncaught Error: Call to a member function get_all_products_link() on null in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php:78
+Stack trace:
+#0 /srv/www/kyanidev.health/public_html/wp-includes/template.php(770): require_once()
+#1 /srv/www/kyanidev.health/public_html/wp-includes/template.php(716): load_template()
+#2 /srv/www/kyanidev.health/public_html/wp-includes/general-template.php(92): locate_template()
+#3 /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/page.php(59): get_footer()
+#4 /srv/www/kyanidev.health/public_html/wp-includes/template-loader.php(106): include('/srv/www/kyanid...')
+#5 /srv/www/kyanidev.health/public_html/wp-blog-header.php(19): require_once('/srv/www/kyanid...')
+#6 /srv/www/kyanidev.health/public_html/index.php(17): require('/srv/www/kyanid...')
+#7 {main}
+  thrown in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php on line 78
+
+2022-03-11T18:07:40+00:00 CRITICAL Uncaught Error: Call to a member function get_all_products_link() on null in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php:78
+Stack trace:
+#0 /srv/www/kyanidev.health/public_html/wp-includes/template.php(770): require_once()
+#1 /srv/www/kyanidev.health/public_html/wp-includes/template.php(716): load_template()
+#2 /srv/www/kyanidev.health/public_html/wp-includes/general-template.php(92): locate_template()
+#3 /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/page.php(59): get_footer()
+#4 /srv/www/kyanidev.health/public_html/wp-includes/template-loader.php(106): include('/srv/www/kyanid...')
+#5 /srv/www/kyanidev.health/public_html/wp-blog-header.php(19): require_once('/srv/www/kyanid...')
+#6 /srv/www/kyanidev.health/public_html/index.php(17): require('/srv/www/kyanid...')
+#7 {main}
+  thrown in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php on line 78
+
+2022-03-11T18:09:17+00:00 CRITICAL Uncaught Error: Call to a member function get_all_products_link() on null in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php:78
+Stack trace:
+#0 /srv/www/kyanidev.health/public_html/wp-includes/template.php(770): require_once()
+#1 /srv/www/kyanidev.health/public_html/wp-includes/template.php(716): load_template()
+#2 /srv/www/kyanidev.health/public_html/wp-includes/general-template.php(92): locate_template()
+#3 /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/page.php(59): get_footer()
+#4 /srv/www/kyanidev.health/public_html/wp-includes/template-loader.php(106): include('/srv/www/kyanid...')
+#5 /srv/www/kyanidev.health/public_html/wp-blog-header.php(19): require_once('/srv/www/kyanid...')
+#6 /srv/www/kyanidev.health/public_html/index.php(17): require('/srv/www/kyanid...')
+#7 {main}
+  thrown in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php on line 78
+
+2022-03-11T18:09:24+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Cart::taxes() in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/woocommerce/cart/cart-totals.php:45
+Stack trace:
+#0 /srv/www/kyanidev.health/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /srv/www/kyanidev.health/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2115): wc_get_template()
+#2 /srv/www/kyanidev.health/public_html/wp-includes/class-wp-hook.php(307): woocommerce_cart_totals()
+#3 /srv/www/kyanidev.health/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters()
+#4 /srv/www/kyanidev.health/public_html/wp-includes/plugin.php(474): WP_Hook->do_action()
+#5 /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/woocommerce/cart/cart.php(196): do_action()
+#6 /srv/www/kyanidev.health/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/srv/www/kyanid...')
+#7 /srv/www/kyanidev.health/public_html/wp-content/plug in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/woocommerce/cart/cart-totals.php on line 45
+
+2022-03-11T18:09:58+00:00 CRITICAL Uncaught Error: Call to a member function get_all_products_link() on null in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php:78
+Stack trace:
+#0 /srv/www/kyanidev.health/public_html/wp-includes/template.php(770): require_once()
+#1 /srv/www/kyanidev.health/public_html/wp-includes/template.php(716): load_template()
+#2 /srv/www/kyanidev.health/public_html/wp-includes/general-template.php(92): locate_template()
+#3 /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/page.php(59): get_footer()
+#4 /srv/www/kyanidev.health/public_html/wp-includes/template-loader.php(106): include('/srv/www/kyanid...')
+#5 /srv/www/kyanidev.health/public_html/wp-blog-header.php(19): require_once('/srv/www/kyanid...')
+#6 /srv/www/kyanidev.health/public_html/index.php(17): require('/srv/www/kyanid...')
+#7 {main}
+  thrown in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php on line 78
+
+2022-03-11T18:11:42+00:00 CRITICAL Uncaught Error: Call to a member function get_all_products_link() on null in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php:78
+Stack trace:
+#0 /srv/www/kyanidev.health/public_html/wp-includes/template.php(770): require_once()
+#1 /srv/www/kyanidev.health/public_html/wp-includes/template.php(716): load_template()
+#2 /srv/www/kyanidev.health/public_html/wp-includes/general-template.php(92): locate_template()
+#3 /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/page.php(59): get_footer()
+#4 /srv/www/kyanidev.health/public_html/wp-includes/template-loader.php(106): include('/srv/www/kyanid...')
+#5 /srv/www/kyanidev.health/public_html/wp-blog-header.php(19): require_once('/srv/www/kyanid...')
+#6 /srv/www/kyanidev.health/public_html/index.php(17): require('/srv/www/kyanid...')
+#7 {main}
+  thrown in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php on line 78
+
+2022-03-11T18:12:24+00:00 CRITICAL Uncaught Error: Call to a member function get_all_products_link() on null in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php:78
+Stack trace:
+#0 /srv/www/kyanidev.health/public_html/wp-includes/template.php(770): require_once()
+#1 /srv/www/kyanidev.health/public_html/wp-includes/template.php(716): load_template()
+#2 /srv/www/kyanidev.health/public_html/wp-includes/general-template.php(92): locate_template()
+#3 /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/page.php(59): get_footer()
+#4 /srv/www/kyanidev.health/public_html/wp-includes/template-loader.php(106): include('/srv/www/kyanid...')
+#5 /srv/www/kyanidev.health/public_html/wp-blog-header.php(19): require_once('/srv/www/kyanid...')
+#6 /srv/www/kyanidev.health/public_html/index.php(17): require('/srv/www/kyanid...')
+#7 {main}
+  thrown in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php on line 78
+
+2022-03-11T18:12:48+00:00 CRITICAL Uncaught Error: Call to a member function get_all_products_link() on null in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php:78
+Stack trace:
+#0 /srv/www/kyanidev.health/public_html/wp-includes/template.php(770): require_once()
+#1 /srv/www/kyanidev.health/public_html/wp-includes/template.php(716): load_template()
+#2 /srv/www/kyanidev.health/public_html/wp-includes/general-template.php(92): locate_template()
+#3 /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/page.php(59): get_footer()
+#4 /srv/www/kyanidev.health/public_html/wp-includes/template-loader.php(106): include('/srv/www/kyanid...')
+#5 /srv/www/kyanidev.health/public_html/wp-blog-header.php(19): require_once('/srv/www/kyanid...')
+#6 /srv/www/kyanidev.health/public_html/index.php(17): require('/srv/www/kyanid...')
+#7 {main}
+  thrown in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php on line 78
+
+2022-03-11T18:13:05+00:00 CRITICAL Uncaught Error: Call to a member function get_all_products_link() on null in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php:78
+Stack trace:
+#0 /srv/www/kyanidev.health/public_html/wp-includes/template.php(770): require_once()
+#1 /srv/www/kyanidev.health/public_html/wp-includes/template.php(716): load_template()
+#2 /srv/www/kyanidev.health/public_html/wp-includes/general-template.php(92): locate_template()
+#3 /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/page.php(59): get_footer()
+#4 /srv/www/kyanidev.health/public_html/wp-includes/template-loader.php(106): include('/srv/www/kyanid...')
+#5 /srv/www/kyanidev.health/public_html/wp-blog-header.php(19): require_once('/srv/www/kyanid...')
+#6 /srv/www/kyanidev.health/public_html/index.php(17): require('/srv/www/kyanid...')
+#7 {main}
+  thrown in /srv/www/kyanidev.health/public_html/wp-content/themes/understrap/footer.php on line 78
+
