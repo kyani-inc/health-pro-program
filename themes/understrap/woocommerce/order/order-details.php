@@ -39,9 +39,9 @@ if ( $show_downloads ) {
 	);
 }
 ?>
-<section class="woocommerce-order-details">
+<section class="woocommerce-order-details d-flex">
 	<?php do_action( 'woocommerce_order_details_before_order_table', $order ); ?>
-
+	<div class="w-50 p-3 checkout-half">
 	<table class="shop_table woocommerce-checkout-review-order-table woocommerce-table woocommerce-table--order-details shop_table order_details">
 		<tbody>
 		<thead>
@@ -68,8 +68,30 @@ if ( $show_downloads ) {
 		<?php do_action( 'woocommerce_review_order_before_cart_contents' ); ?>
 		</tbody>
 	</table>
+</div>
+<div class="w-50 p-3 checkout-half">
+	<?php
+	do_action( 'woocommerce_order_details_before_order_table_items', $order );
 
+	foreach ( $order_items as $item_id => $item ) {
+		$product = $item->get_product();
 
+		wc_get_template(
+				'order/order-details-item.php',
+				array(
+						'order'              => $order,
+						'item_id'            => $item_id,
+						'item'               => $item,
+						'show_purchase_note' => $show_purchase_note,
+						'purchase_note'      => $product ? $product->get_purchase_note() : '',
+						'product'            => $product,
+				)
+		);
+	}
+
+	do_action( 'woocommerce_order_details_after_order_table_items', $order );
+	?>
+</div>
 </section>
 
 <?php
