@@ -42,9 +42,32 @@ if ( $show_downloads ) {
 <section class="woocommerce-order-details">
 	<?php do_action( 'woocommerce_order_details_before_order_table', $order ); ?>
 
-	<h2 class="woocommerce-order-details__title"><?php esc_html_e( 'Order details', 'woocommerce' ); ?></h2>
-
+	<table class="shop_table woocommerce-checkout-review-order-table woocommerce-table woocommerce-table--order-details shop_table order_details">
+		<tbody>
+		<thead>
+		<th><?php esc_html_e( 'Order Summary', 'woocommerce' ); ?></th>
+		</thead>
+		<tr>
+			<td class="product-name"><?php esc_html_e( 'Products', 'woocommerce' ); ?></td>
+			<?php if (wc_discount_total() !== NULL) { ?>
+				<td class="product-total"><?php esc_html_e( 'Original total price', 'woocommerce' ); ?></td>
+				<td class="product-total"><?php esc_html_e( 'Discount', 'woocommerce' ); ?></td>
+			<?php } ?>
+			<td class="product-total"><strong><?php esc_html_e( 'Total price', 'woocommerce' ); ?></strong></td>
+		</tr>
+		<tr>
+			<td><?php echo WC()->cart->cart_contents_count; ?></td>
+			<?php if (wc_discount_total() !== NULL) { ?>
+				<td><?php echo wc_original_total_price(); ?></td>
+				<td><?php echo wc_discount_total(); ?></td>
+			<?php } ?>
+			<td><strong><?php echo WC()->cart->get_cart_total() ?></strong></td>
+		</tr>
+		<?php do_action( 'woocommerce_review_order_before_cart_contents' ); ?>
+		</tbody>
+	</table>
 	<table class="woocommerce-table woocommerce-table--order-details shop_table order_details">
+
 
 		<thead>
 			<tr>
