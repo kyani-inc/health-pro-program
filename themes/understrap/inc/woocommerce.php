@@ -231,6 +231,7 @@ function wc_original_total_price() {
 		$_product = $values['data'];
 
 		if ( $_product->is_on_sale() ) {
+
 			$regular_price = $_product->get_regular_price();
 			$sale_price = $_product->get_sale_price();
 			$discount = ($regular_price - $sale_price) * $values['quantity'];
