@@ -42,7 +42,7 @@ $currency = get_woocommerce_currency_symbol();
 			<?php if (wc_discount_total() !== NULL) { ?>
 				<td><?php echo wc_discount_total(); ?></td>
 			<?php } ?>
-			<td><?php echo print_r(WC()->cart->get_taxes()); ?></td>
+			<td>$<?php echo WC()->cart->get_total_tax(); ?></td>
 			<td><strong><?php echo WC()->cart->get_cart_total() ?></strong></td>
 		</tr>
 		<?php do_action( 'woocommerce_review_order_before_cart_contents' ); ?>
