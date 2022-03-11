@@ -50,9 +50,10 @@ if ( $show_downloads ) {
 		<tr>
 			<td class="product-name"><?php esc_html_e( 'Products', 'woocommerce' ); ?></td>
 			<?php if (wc_discount_total() !== NULL) { ?>
-				<td class="product-total"><?php esc_html_e( 'Original total price', 'woocommerce' ); ?></td>
+				<td class="product-total"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></td>
 				<td class="product-total"><?php esc_html_e( 'Discount', 'woocommerce' ); ?></td>
 			<?php } ?>
+			<td class="product-total"><?php esc_html_e( 'Tax', 'woocommerce' ); ?></td>
 			<td class="product-total"><strong><?php esc_html_e( 'Total price', 'woocommerce' ); ?></strong></td>
 		</tr>
 		<tr>
@@ -61,66 +62,14 @@ if ( $show_downloads ) {
 				<td><?php echo wc_original_total_price(); ?></td>
 				<td><?php echo wc_discount_total(); ?></td>
 			<?php } ?>
-			<td><strong><?php echo $order->get_order_item_totals() ?></strong></td>
+			<td><?php echo $order->get_cart_tax(); ?></td>
+			<td><strong><?php echo $order->get_formatted_order_total(); ?></strong></td>
 		</tr>
 		<?php do_action( 'woocommerce_review_order_before_cart_contents' ); ?>
 		</tbody>
 	</table>
-	<table class="woocommerce-table woocommerce-table--order-details shop_table order_details">
 
 
-		<thead>
-			<tr>
-				<th class="woocommerce-table__product-name product-name"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
-				<th class="woocommerce-table__product-table product-total"><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
-			</tr>
-		</thead>
-
-		<tbody>
-			<?php
-			do_action( 'woocommerce_order_details_before_order_table_items', $order );
-
-			foreach ( $order_items as $item_id => $item ) {
-				$product = $item->get_product();
-
-				wc_get_template(
-					'order/order-details-item.php',
-					array(
-						'order'              => $order,
-						'item_id'            => $item_id,
-						'item'               => $item,
-						'show_purchase_note' => $show_purchase_note,
-						'purchase_note'      => $product ? $product->get_purchase_note() : '',
-						'product'            => $product,
-					)
-				);
-			}
-
-			do_action( 'woocommerce_order_details_after_order_table_items', $order );
-			?>
-		</tbody>
-
-		<tfoot>
-			<?php
-			foreach ( $order->get_order_item_totals() as $key => $total ) {
-				?>
-					<tr>
-						<th scope="row"><?php echo esc_html( $total['label'] ); ?></th>
-						<td><?php echo ( 'payment_method' === $key ) ? esc_html( $total['value'] ) : wp_kses_post( $total['value'] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></td>
-					</tr>
-					<?php
-			}
-			?>
-			<?php if ( $order->get_customer_note() ) : ?>
-				<tr>
-					<th><?php esc_html_e( 'Note:', 'woocommerce' ); ?></th>
-					<td><?php echo wp_kses_post( nl2br( wptexturize( $order->get_customer_note() ) ) ); ?></td>
-				</tr>
-			<?php endif; ?>
-		</tfoot>
-	</table>
-
-	<?php do_action( 'woocommerce_order_details_after_order_table', $order ); ?>
 </section>
 
 <?php
