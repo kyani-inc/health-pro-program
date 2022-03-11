@@ -60,7 +60,7 @@ if ( $show_downloads ) {
 			<td><?php echo $order->get_item_count();; ?></td>
 				<td>$<?php echo $order->get_subtotal(); ?></td>
 			<?php if (wc_discount_total() !== NULL) { ?>
-				<td><?php echo wc_discount_total(); ?></td>
+				<td>-<?php echo wc_discount_total(); ?></td>
 			<?php } ?>
 			<td>$<?php echo $order->get_total_tax(); ?></td>
 			<td><strong><?php echo $order->get_formatted_order_total(); ?></strong></td>

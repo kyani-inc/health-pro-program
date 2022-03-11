@@ -40,7 +40,7 @@ $currency = get_woocommerce_currency_symbol();
 			<td><?php echo WC()->cart->cart_contents_count; ?></td>
 				<td><?php echo wc_original_total_price(); ?></td>
 			<?php if (wc_discount_total() !== NULL) { ?>
-				<td><?php echo wc_discount_total(); ?></td>
+				<td>- <?php echo wc_discount_total(); ?></td>
 			<?php } ?>
 			<td>$<?php echo WC()->cart->get_cart_contents_tax() . '<br>'; ?></td>
 			<td><strong><?php echo WC()->cart->get_total()?></strong></td>
