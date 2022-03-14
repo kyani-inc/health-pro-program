@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php if (wc_discount_total() !== NULL) { ?>
 			<td class="product-total"><?php esc_html_e( 'Discount', 'woocommerce' ); ?></td>
 		<?php } ?>
-		<td class="product-total"><?php esc_html_e( 'Tax', 'woocommerce' ); ?></td>
+		<td class="product-total"><?php esc_html_e( 'Taxes', 'woocommerce' ); ?></td>
 		<td class="product-total"><strong><?php esc_html_e( 'Total price', 'woocommerce' ); ?></strong></td>
 	</tr>
 	<tr>

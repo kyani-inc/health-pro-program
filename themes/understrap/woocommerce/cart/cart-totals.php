@@ -33,7 +33,6 @@ $currency = get_woocommerce_currency_symbol();
 			<?php if (wc_discount_total() !== NULL) { ?>
 				<td class="product-total"><?php esc_html_e( 'Discount', 'woocommerce' ); ?></td>
 			<?php } ?>
-			<td class="product-total"><?php esc_html_e( 'Tax', 'woocommerce' ); ?></td>
 			<td class="product-total"><strong><?php esc_html_e( 'Total price', 'woocommerce' ); ?></strong></td>
 		</tr>
 		<tr>
@@ -42,7 +41,6 @@ $currency = get_woocommerce_currency_symbol();
 			<?php if (wc_discount_total() !== NULL) { ?>
 				<td>- <?php echo wc_discount_total(); ?></td>
 			<?php } ?>
-			<td>$<?php echo WC()->cart->get_cart_contents_tax() . '<br>'; ?></td>
 			<td><strong><?php echo WC()->cart->get_total()?></strong></td>
 		</tr>
 		<?php do_action( 'woocommerce_review_order_before_cart_contents' ); ?>
