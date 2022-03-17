@@ -253,3 +253,14 @@ function my_dynamic_menu_items( $menu_items ) {
 
 	return $menu_items;
 }
+
+add_filter( 'woocommerce_form_field', 'woocommerce_checkout_fields_inline_error', 10, 4 );
+function woocommerce_checkout_fields_inline_error( $field, $key, $args, $value ) {
+	if ( strpos( $field, '</label>' ) !== false && $args['required'] ) {
+		$error = '<span class="error" style="display:none">';
+		$error .= sprintf( __( 'Please enter %s', 'woocommerce' ), $args['label'] );
+		$error .= '</span>';
+		$field = substr_replace( $field, $error, strpos( $field, '</label>' ), 0);
+	}
+	return $field;
+}
