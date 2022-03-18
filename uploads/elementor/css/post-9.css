@@ -1,0 +1,9 @@
+.elementor-9 .elementor-element.elementor-element-3ab8ae9 > .elementor-container{max-width:1440px;}.elementor-9 .elementor-element.elementor-element-3ab8ae9{padding:150px 0px 50px 0px;}/* Start custom CSS for wc-elements, class: .elementor-element-82a6433 */.woocommerce-checkout p.woocommerce-invalid-required-field span.error {
+   color: #B00020;
+   display: block !important;
+
+}
+
+.woocommerce-error {
+    display: none !important;
+}/* End custom CSS */
