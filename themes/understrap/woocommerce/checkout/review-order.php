@@ -14,23 +14,27 @@
  * @package WooCommerce\Templates
  * @version 5.2.0
  */
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 ?>
 <table class="shop_table woocommerce-checkout-review-order-table p-3">
 	<tbody>
 	<thead>
-	<th><?php esc_html_e( 'Order Summary', 'woocommerce' ); ?></th>
+	<th><?php esc_html_e('Order Summary', 'woocommerce'); ?></th>
 	</thead>
 	<tr>
-		<td class="product-name"><?php esc_html_e( 'Products', 'woocommerce' ); ?></td>
-		<td class="product-total"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></td>
+		<td class="product-name"><?php esc_html_e('Products', 'woocommerce'); ?></td>
+		<td class="product-total"><?php esc_html_e('Subtotal', 'woocommerce'); ?></td>
 		<?php if (wc_discount_total() !== NULL) { ?>
-			<td class="product-total"><?php esc_html_e( 'Discount', 'woocommerce' ); ?></td>
+			<td class="product-total"><?php esc_html_e('Discount', 'woocommerce'); ?></td>
 		<?php } ?>
 		<?php if (WC()->cart->get_cart_contents_tax() != "$0") { ?>
-		<td class="product-total"><?php esc_html_e( 'Taxes', 'woocommerce' ); ?></td>
+			<td class="product-total"><?php esc_html_e('Taxes', 'woocommerce'); ?></td>
 		<?php } ?>
-		<td class="product-total"><strong><?php esc_html_e( 'Total price', 'woocommerce' ); ?></strong></td>
+
+		<?php if (WC()->cart->get_cart_shipping_total() != "$0") { ?>
+			<td class="product-total"><?php esc_html_e('Shipping', 'woocommerce'); ?></td>
+		<?php } ?>
+		<td class="product-total"><strong><?php esc_html_e('Total price', 'woocommerce'); ?></strong></td>
 	</tr>
 	<tr>
 		<td><?php echo WC()->cart->cart_contents_count; ?></td>
@@ -39,10 +43,13 @@ defined( 'ABSPATH' ) || exit;
 			<td>- <?php echo wc_discount_total(); ?></td>
 		<?php } ?>
 		<?php if (WC()->cart->get_cart_contents_tax() != "$0") { ?>
-		<td>$<?php echo WC()->cart->get_cart_contents_tax() . '<br>'; ?></td>
+			<td>$<?php echo WC()->cart->get_cart_contents_tax() . '<br>'; ?></td>
 		<?php } ?>
-		<td><strong><?php echo WC()->cart->get_total()?></strong></td>
+		<?php if (WC()->cart->get_cart_shipping_total() != "$0") { ?>
+			<td><?php echo WC()->cart->get_cart_shipping_total(); ?></td>
+		<?php } ?>
+		<td><strong><?php echo WC()->cart->get_total() ?></strong></td>
 	</tr>
-		<?php do_action( 'woocommerce_review_order_before_cart_contents' ); ?>
+	<?php do_action('woocommerce_review_order_before_cart_contents'); ?>
 	</tbody>
 </table>
