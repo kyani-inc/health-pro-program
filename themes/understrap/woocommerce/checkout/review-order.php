@@ -27,12 +27,11 @@ defined('ABSPATH') || exit;
 		<?php if (wc_discount_total() !== NULL) { ?>
 			<td class="product-total"><?php esc_html_e('Discount', 'woocommerce'); ?></td>
 		<?php } ?>
-		<?php if (WC()->cart->get_cart_contents_tax() != "$0") { ?>
-			<td class="product-total"><?php esc_html_e('Taxes', 'woocommerce'); ?></td>
-		<?php } ?>
-
 		<?php if (WC()->cart->get_cart_shipping_total() != "$0") { ?>
 			<td class="product-total"><?php esc_html_e('Shipping', 'woocommerce'); ?></td>
+		<?php } ?>
+		<?php if (WC()->cart->get_cart_contents_tax() != "$0") { ?>
+			<td class="product-total"><?php esc_html_e('Taxes', 'woocommerce'); ?></td>
 		<?php } ?>
 		<td class="product-total"><strong><?php esc_html_e('Total price', 'woocommerce'); ?></strong></td>
 	</tr>
@@ -42,11 +41,11 @@ defined('ABSPATH') || exit;
 		<?php if (wc_discount_total() !== NULL) { ?>
 			<td>- <?php echo wc_discount_total(); ?></td>
 		<?php } ?>
-		<?php if (WC()->cart->get_cart_contents_tax() != "$0") { ?>
-			<td>$<?php echo WC()->cart->get_cart_contents_tax() . '<br>'; ?></td>
-		<?php } ?>
 		<?php if (WC()->cart->get_cart_shipping_total() != "$0") { ?>
 			<td><?php echo WC()->cart->get_cart_shipping_total(); ?></td>
+		<?php } ?>
+		<?php if (WC()->cart->get_cart_contents_tax() != "$0") { ?>
+			<td>$<?php echo WC()->cart->get_cart_contents_tax() . '<br>'; ?></td>
 		<?php } ?>
 		<td><strong><?php echo WC()->cart->get_total() ?></strong></td>
 	</tr>
