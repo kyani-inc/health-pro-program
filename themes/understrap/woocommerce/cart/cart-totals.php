@@ -39,9 +39,9 @@ $currency = get_woocommerce_currency_symbol();
 			<td><?php echo WC()->cart->cart_contents_count; ?></td>
 			<td><?php echo wc_original_total_price(); ?></td>
 			<?php if (wc_discount_total() !== NULL) { ?>
-				<td>- <?php echo wc_discount_total(); ?></td>
+				<td>-<?php echo wc_discount_total(); ?></td>
 			<?php } ?>
-			<td><strong><?php echo WC()->cart->get_subtotal() ?></strong></td>
+			<td><strong><?php echo WC()->cart->get_total() ?></strong></td>
 		</tr>
 		<?php do_action('woocommerce_review_order_before_cart_contents'); ?>
 		</tbody>

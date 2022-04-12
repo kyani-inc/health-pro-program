@@ -108,7 +108,8 @@ do_action('woocommerce_before_cart'); ?>
 				</h2>
 				<span class="product-price" data-title="<?php esc_attr_e('Price', 'woocommerce'); ?>">Price:
 				<?php
-				echo apply_filters('woocommerce_cart_item_price', WC()->cart->get_product_subtotal($_product), $cart_item, $cart_item_key); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				$product = new WC_Product($_product);
+				echo "$" . $product->get_regular_price(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				?>
 			</span>
 				<span class="product-quantity" data-title="<?php esc_attr_e('Quantity', 'woocommerce'); ?>">
