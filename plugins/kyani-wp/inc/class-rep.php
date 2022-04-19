@@ -4,7 +4,8 @@ class Rep
 {
 	private $rep_name, $image_url, $email, $description, $found, $rep_id, $join_url, $company_flag, $company_name;
 
-	function __construct($repDID) {
+	function __construct($repDID)
+	{
 		if ($repDID != "") {
 			$url = "https://api.kyani.net/rep/site?find=" . $repDID;
 			$request = wp_remote_get($url);
@@ -36,38 +37,46 @@ class Rep
 		}
 	}
 
-	function get_rep_name() {
-		if($this->company_flag === 1){
+	function get_rep_name()
+	{
+		if ($this->company_flag === 1) {
 			return $this->company_name;
 		}
 		return $this->rep_name;
 	}
 
-	function rep_found() {
+	function rep_found()
+	{
 		return $this->found;
 	}
 
-	function get_rep_image() {
+	function get_rep_image()
+	{
 		return $this->image_url;
 	}
 
-	function get_rep_email() {
+	function get_rep_email()
+	{
 		return $this->email;
 	}
 
-	function get_rep_id() {
+	function get_rep_id()
+	{
 		return $this->rep_id;
 	}
 
-	function get_rep_description() {
+	function get_rep_description()
+	{
 		return $this->description;
 	}
 
-	function get_rep_join_link() {
+	function get_rep_join_link()
+	{
 		return $this->join_url;
 	}
 
-	private function set_rep_join_link($repID) {
+	private function set_rep_join_link($repID)
+	{
 		// get current country code
 		$current_site_id = get_current_blog_id();
 		$current_site_country_code = str_replace("/", "", get_blog_details($current_site_id)->path);
@@ -92,7 +101,8 @@ class Rep
 	}
 }
 
-function set_rep() {
+function set_rep()
+{
 	$repID = "";
 	if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 		$repID = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
@@ -104,12 +114,19 @@ function set_rep() {
 
 add_action('init', 'set_rep');
 
-function add_rep_query_var($link) {
+function add_rep_query_var($link)
+{
 	if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 		$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
-		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO']. "://" . $_SERVER['HTTP_HOST'],"", $link );
+		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'], "", $link);
 		$path = str_replace('https/', '', $uri);
-		$pathfin = substr_replace($path, $rep . '.nitrohealthpro.com/', 0, 0);
+		$pathfin = substr_replace($path, $rep . '.nitronutritionlife.com/', 0, 0);
+		return 'https://' . $pathfin;
+	} else if (!isset($_SERVER['HTTP_X_KYANI_REP'])) {
+		$rep = "";
+		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'], "", $link);
+		$path = str_replace('https/', '', $uri);
+		$pathfin = substr_replace($path, $rep . '.nitronutritionlife.com/', 0, 0);
 		return 'https://' . $pathfin;
 	}
 	return $link;
@@ -140,6 +157,7 @@ add_filter('end_post_rel_link', 'add_rep_query_var');
 
 // add cors policy
 add_action('init', 'add_cors_http_header');
-function add_cors_http_header() {
+function add_cors_http_header()
+{
 	header('Access-Control-Allow-Origin: *');
 }
