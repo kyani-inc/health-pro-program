@@ -63,6 +63,18 @@ function wooc_extra_register_fields()
 
 add_action('woocommerce_register_form_end', 'wooc_extra_register_fields');
 
+function woocc_extra_register_fields()
+{
+	global $wp_roles; ?>
+	<script>    if (document.cookie.indexOf('role') > -1) {
+			document.getElementById("billing_role").value = "um_health-pro";
+
+		}</script>
+	<?php
+}
+
+add_action('init', 'woocc_extra_register_fields');
+
 //saving role
 add_action('woocommerce_created_customer', 'update_user_role');
 function update_user_role($user_id)
