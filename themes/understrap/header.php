@@ -68,7 +68,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 		const d = new Date();
 		d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
 		let expires = "expires=" + d.toUTCString();
-		document.cookie = sname + "=" + svalue + ";" + expires + ";path=/;domain=nitrohealthpro.com";
+		document.cookie = sname + "=" + svalue + ";" + expires + ";path=/;domain=nitronutritionlife.com";
 	}
 
 	function getCookie(sname) {
@@ -90,7 +90,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	let subdomain = host.split(".")[0];
 	let path = window.location.pathname;
 	let sponsor = getCookie("sponsor");
-	if ((subdomain !== "nitrohealthpro") && (sponsor != subdomain)) {
+	if ((subdomain !== "nitronutritionlife") && (sponsor != subdomain)) {
 		setCookie("sponsor", subdomain, 5);
 	}
 
