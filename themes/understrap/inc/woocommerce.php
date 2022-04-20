@@ -286,3 +286,25 @@ function disable_shipping_calc_on_cart($show_shipping)
 }
 
 add_filter('woocommerce_cart_ready_to_calc_shipping', 'disable_shipping_calc_on_cart', 99);
+
+
+function customer_role_cookie()
+{
+	if (current_user_can('customer')) {
+		if (empty($_COOKIE['disable_cache'])) {
+			setcookie('disable_cache', 'Customer');
+		}
+	}
+}
+
+function pro_role_cookie()
+{
+	if (current_user_can('health_pro')) {
+		if (empty($_COOKIE['disable_cache'])) {
+			setcookie('disable_cache', 'Health Pro');
+		}
+	}
+}
+
+add_action('init', 'customer_role_cookie');
+add_action('init', 'pro_role_cookie');
