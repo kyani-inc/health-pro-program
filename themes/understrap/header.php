@@ -26,7 +26,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	if (!($rep === "")) {
 		$logoLink = "kyani-blue-logo-bp.svg";
 		$logoWidth = "180";
-		$homeLink = $rep . '.nitrohealthpro.com/';
+		$homeLink = '.nitronutritionlife.com/';
 	} else {
 		$logoLink = "kyani-blue-logo.svg";
 		$logoWidth = "80";
@@ -52,9 +52,10 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	<script src="https://kit.fontawesome.com/0b3c9b4cc0.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+		  rel="stylesheet">
 	<?php wp_head(); ?>
 	<title><?php echo esc_html(wp_title()); ?> </title>
 </head>
@@ -66,14 +67,14 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	function setCookie(sname, svalue, days) {
 		const d = new Date();
 		d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
-		let expires = "expires="+d.toUTCString();
+		let expires = "expires=" + d.toUTCString();
 		document.cookie = sname + "=" + svalue + ";" + expires + ";path=/;domain=nitrohealthpro.com";
 	}
 
 	function getCookie(sname) {
 		let name = sname + "=";
 		let sa = document.cookie.split(";");
-		for(let i = 0; i < sa.length; i++) {
+		for (let i = 0; i < sa.length; i++) {
 			let s = sa[i];
 			while (s.charAt(0) == " ") {
 				s = s.substring(1);
@@ -94,10 +95,9 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	}
 
 	var url = window.location.search;
-	if(url.indexOf('?user=health-pro') !== -1) {
+	if (url.indexOf('?user=health-pro') !== -1) {
 		setCookie("user", "health-pro", 1);
 	}
-
 
 
 </script>
@@ -140,7 +140,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 								alt=""
 								width="80"></a>
 					<ul class="navbar-nav rep-nav">
-					<?php echo do_shortcode('[replicatedDisplay]'); ?>
+						<?php echo do_shortcode('[replicatedDisplay]'); ?>
 					</ul>
 					<?php wp_nav_menu(
 							array(
@@ -170,26 +170,26 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 						<span class="mobile-only">
 							<a href="<?php echo wc_get_cart_url(); ?>"><i class="fas fa-shopping-basket"></i></a>
 						</span>
-					<?php echo do_shortcode("[woo_cart_but]"); ?>
+						<?php echo do_shortcode("[woo_cart_but]"); ?>
 					</ul>
 					<?php if ('container' === $container) : ?>
 				</div>
 			<?php endif; ?>
 			</nav><!-- .site-navigation -->
 			<?php endif; ?>
-				<div class="main-menu" id="side-panel-menu">
-					<div class="main-menu-container flex-column d-flex">
-						<?php
-						wp_nav_menu(array(
-								'theme_location' => 'mobile',
-								'container' => false,
-								'menu_class' => 'nav flex-column flex-fill',
-								'add_li_class' => 'nav-item',
-								'depth' => 3,
-								'walker' => new Custom_WP_Bootstrap_Navwalker(),
-						));
-						?>
-					</div>
+			<div class="main-menu" id="side-panel-menu">
+				<div class="main-menu-container flex-column d-flex">
+					<?php
+					wp_nav_menu(array(
+							'theme_location' => 'mobile',
+							'container' => false,
+							'menu_class' => 'nav flex-column flex-fill',
+							'add_li_class' => 'nav-item',
+							'depth' => 3,
+							'walker' => new Custom_WP_Bootstrap_Navwalker(),
+					));
+					?>
 				</div>
+			</div>
 			<!--main-menu end-->
 	</div><!-- #wrapper-navbar end -->

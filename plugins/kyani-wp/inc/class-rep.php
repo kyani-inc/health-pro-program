@@ -123,10 +123,9 @@ function add_rep_query_var($link)
 		$pathfin = substr_replace($path, $rep . '.nitronutritionlife.com/', 0, 0);
 		return 'https://' . $pathfin;
 	} else if (!isset($_SERVER['HTTP_X_KYANI_REP'])) {
-		$rep = "";
 		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'], "", $link);
 		$path = str_replace('https/', '', $uri);
-		$pathfin = substr_replace($path, $rep . '.nitronutritionlife.com/', 0, 0);
+		$pathfin = substr_replace($path, 'nitronutritionlife.com/', 0, 0);
 		return 'https://' . $pathfin;
 	}
 	return $link;
