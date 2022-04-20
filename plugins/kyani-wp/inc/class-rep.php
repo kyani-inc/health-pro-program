@@ -123,7 +123,7 @@ function add_rep_query_var($link)
 		$path = str_replace('https/', '', $uri);
 		$pathfin = substr_replace($path, $rep . '.nitronutritionlife.com/', 0, 0);
 		return 'https://' . $pathfin;
-	} else if (!isset($_SERVER['HTTP_X_KYANI_REP'])) {
+	} else if (!isset($_SERVER['HTTP_X_KYANI_REP']) && strpos($link, 'wp-admin') == true) {
 		echo 'nrom';
 		return $link;
 	}
