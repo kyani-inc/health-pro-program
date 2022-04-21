@@ -53,7 +53,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 					   value="<?php echo (!empty($_POST['email'])) ? esc_attr(wp_unslash($_POST['email'])) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
 			</p>
 
-			<input type="text" class="" id="reg_role" name="role" class="input" value="customer">
+			<input type="text" class="invisible" id="reg_role" name="role" class="input" value="customer">
 			<script>    if (document.cookie.indexOf('user') > -1) {
 					document.getElementById("reg_role").value = "um_health-pro";
 
