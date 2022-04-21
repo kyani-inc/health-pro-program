@@ -50,17 +50,6 @@ function woo_cart_but_count($fragments)
 	return $fragments;
 }
 
-function wooc_extra_register_fields()
-{
-	global $wp_roles; ?>
-	<input class="invisible" id="reg_role" name="role" class="input" value="customer">
-	<script>    if (document.cookie.indexOf('user') > -1) {
-			document.getElementById("reg_role").value = "um_health-pro";
-
-		}</script>
-	<?php
-}
-
 //saving role
 add_action('woocommerce_created_customer', 'update_user_role');
 function update_user_role($user_id)
