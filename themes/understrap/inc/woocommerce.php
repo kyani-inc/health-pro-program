@@ -281,16 +281,15 @@ function customer_role_cookie()
 		if (empty($_COOKIE['role'])) {
 			setcookie('role', 'Customer');
 		}
+	} else {
+		if (empty($_COOKIE['role'])) {
+			setcookie('role', 'Health Pro');
+		}
 	}
 }
 
 function pro_role_cookie()
 {
-	if (current_user_can('um_health-pro')) {
-		if (empty($_COOKIE['role'])) {
-			setcookie('role', 'Health Pro');
-		}
-	}
 }
 
 add_action('init', 'customer_role_cookie');
