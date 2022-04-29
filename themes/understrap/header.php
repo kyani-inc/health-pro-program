@@ -19,19 +19,14 @@ $container = get_theme_mod('understrap_container_type');
 
 $logoLink = "";
 $logoWidth = "";
-$homeLink = "";
+$homeLink = "nitronutritionlife.com/";
 
 if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
 	if (!($rep === "")) {
-		if ($rep == "ls") {
-			$logoLink = "kyani-blue-logo-bp.svg";
-			$logoWidth = "180";
-			$homeLink = 'nitronutritionlife.com/';
-		}
 		$logoLink = "kyani-blue-logo-bp.svg";
 		$logoWidth = "180";
-		$homeLink = '.nitronutritionlife.com/';
+		$homeLink = $rep . '.nitronutritionlife.com/';
 	} else {
 		$logoLink = "kyani-blue-logo.svg";
 		$logoWidth = "80";
