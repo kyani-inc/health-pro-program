@@ -26,11 +26,10 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	if (!($rep === "")) {
 		$logoLink = "kyani-blue-logo-bp.svg";
 		$logoWidth = "180";
-
+		$homeLink = 'nitronutritionlife.com/';
 	} else {
 		$logoLink = "kyani-blue-logo.svg";
 		$logoWidth = "80";
-
 	}
 
 } else {
@@ -135,7 +134,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 							<span class="side-panel-btn"></span>
 							<span class="side-panel-btn"></span>
 							</span></a>
-					<a href="<?php echo($homeLink) ?>"
+					<a href="<?php echo($homeLink != "" ? "//" . $homeLink : esc_url(home_url('/'))); ?>"
 					   class="navbar-brand"><img
 								src="<?php echo esc_url(bloginfo('template_directory') . "/images/kyani-blue-logo.svg") ?>"
 								alt=""
