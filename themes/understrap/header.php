@@ -26,11 +26,11 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	if (!($rep === "")) {
 		$logoLink = "kyani-blue-logo-bp.svg";
 		$logoWidth = "180";
-		$homeLink = $rep . '.nitronutritionlife.com/';
+
 	} else {
 		$logoLink = "kyani-blue-logo.svg";
 		$logoWidth = "80";
-		$homeLink = 'nitronutritionlife.com/';
+
 	}
 
 } else {
