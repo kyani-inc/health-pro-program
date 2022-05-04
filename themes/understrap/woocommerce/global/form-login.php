@@ -27,9 +27,8 @@ do_action('woocommerce_before_customer_login_form'); ?>
 <div class="d-flex" id="customer_login">
 
 	<div class="p-5 w-50 checkout-half">
-		<h2><?php esc_html_e('New to Nitro Nutrition?', 'woocommerce'); ?></h2>
-		<h3><?php esc_html_e('Create An Account', 'woocommerce'); ?></h3>
-		<h4><?php esc_html_e('Each time you shop, you\'ll be able to checkout more quickly!', 'woocommerce'); ?></h4>
+		<h3><?php esc_html_e('New to Nitro Nutrition? Create An Account', 'woocommerce'); ?></h3>
+		<h5><?php esc_html_e('Each time you shop, you\'ll be able to checkout more quickly!', 'woocommerce'); ?></h5>
 		<form method="post"
 			  class="woocommerce-form woocommerce-form-register register" <?php do_action('woocommerce_register_form_tag'); ?> >
 
@@ -93,8 +92,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 	<div class="p-5 w-50 checkout-half">
 
 		<?php endif; ?>
-		<h2><?php esc_html_e('Welcome Back!', 'woocommerce'); ?></h2>
-		<h3><?php esc_html_e('Log Into Your Account', 'woocommerce'); ?></h3>
+		<h3><?php esc_html_e('Welcome Back! Log Into Your Account', 'woocommerce'); ?></h3>
 
 		<form class="woocommerce-form woocommerce-form-login login" method="post">
 
