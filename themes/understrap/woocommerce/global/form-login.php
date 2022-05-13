@@ -28,7 +28,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
 	<div class="p-5 w-50 checkout-half">
 		<h4><?php esc_html_e('First time shopping with us?', 'woocommerce'); ?></h4>
-		<h3><?php esc_html_e('Let\'s get your account all set up!', 'woocommerce'); ?></h3>
+		<h4><?php esc_html_e('Let\'s get your account all set up!', 'woocommerce'); ?></h4>
 		<form method="post"
 			  class="woocommerce-form woocommerce-form-register register" <?php do_action('woocommerce_register_form_tag'); ?> >
 
@@ -93,7 +93,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
 		<?php endif; ?>
 		<h4><?php esc_html_e('Shopped with us before?', 'woocommerce'); ?></h4>
-		<h3><?php esc_html_e('Login here!', 'woocommerce'); ?></h3>
+		<h4><?php esc_html_e('Login here!', 'woocommerce'); ?></h4>
 
 		<form class="woocommerce-form woocommerce-form-login login" method="post">
 
