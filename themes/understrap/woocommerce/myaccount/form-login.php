@@ -28,8 +28,8 @@ $col = 'yes' === get_option('woocommerce_enable_myaccount_registration') ? 6 : 1
 
 <div class="u-column1 col-md-<?php echo (int)$col; ?>">
 
-	<h2><?php esc_html_e('Shopped with us before?', 'woocommerce'); ?></h2>
-	<h2><?php esc_html_e('Login here', 'woocommerce'); ?></h2>
+	<h4><?php esc_html_e('Shopped with us before?', 'woocommerce'); ?></h4>
+	<h3><?php esc_html_e('Login here!', 'woocommerce'); ?></h3>
 
 	<form class="woocommerce-form woocommerce-form-login login" method="post">
 
@@ -75,8 +75,8 @@ $col = 'yes' === get_option('woocommerce_enable_myaccount_registration') ? 6 : 1
 
 	<div class="u-column2 col-md-6">
 
-		<h2><?php esc_html_e('First time shopping with us?', 'woocommerce'); ?></h2>
-		<h2><?php esc_html_e('Let\'s get your account all set up!', 'woocommerce'); ?></h2>
+		<h4><?php esc_html_e('First time shopping with us?', 'woocommerce'); ?></h4>
+		<h3><?php esc_html_e('Let\'s get your account all set up!', 'woocommerce'); ?></h3>
 
 		<form method="post"
 			  class="woocommerce-form woocommerce-form-register register" <?php do_action('woocommerce_register_form_tag'); ?> >
