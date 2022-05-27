@@ -42,7 +42,7 @@ function replicated_display_shortcode()
 			if ($locale_translations->disclaimer) {
 				$replicated_display .=  '<p class="repDisclaimer">' . $locale_translations->disclaimer . '</p>';
 			};
-			$replicated_display .= '</div><button class="repJoin"><a href="' . $rep->get_rep_join_link() . '" target="_blank">' . $locale_translations->join_team . '</a></button>';
+//			$replicated_display .= '</div><button class="repJoin"><a href="' . $rep->get_rep_join_link() . '" target="_blank">' . $locale_translations->join_team . '</a></button>';
 			$replicated_display .= '</div></div>';
 			$replicated_display .= '<div class="justify-content-center p-5 mobile-only">
 								  <div class="text-center"><img src="' . $rep->get_rep_image() . '" class="repImage"></div>
