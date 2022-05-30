@@ -36,13 +36,14 @@ function replicated_display_shortcode()
 																ID: ' . $rep->get_rep_id() . '<br>
 																<a href="mailto:' . $rep->get_rep_email() . '">' . $rep->get_rep_email() . '</a></p>
 																<h3 class="repBioView" onclick="toggleBio()"><span id="viewBio">' . $locale_translations->view_bio . '</span><span id="hideBio" style="display: none;">' . $locale_translations->hide_bio . '</span></h3><div id="repBio" style="display: none;">';
-			if(!empty($rep->get_rep_description())) {
+			if (!empty($rep->get_rep_description())) {
 				$replicated_display .= '<h4>' . $locale_translations->about_me . '</h4>' . $rep->get_rep_description() . '<hr>';
 			}
 			if ($locale_translations->disclaimer) {
-				$replicated_display .=  '<p class="repDisclaimer">' . $locale_translations->disclaimer . '</p>';
+				$replicated_display .= '<p class="repDisclaimer">' . $locale_translations->disclaimer . '</p>';
 			};
-//			$replicated_display .= '</div><button class="repJoin"><a href="' . $rep->get_rep_join_link() . '" target="_blank">' . $locale_translations->join_team . '</a></button>';
+			$replicated_display .= '</div>';
+//			$replicated_display .= '<button class="repJoin"><a href="' . $rep->get_rep_join_link() . '" target="_blank">' . $locale_translations->join_team . '</a></button>';
 			$replicated_display .= '</div></div>';
 			$replicated_display .= '<div class="justify-content-center p-5 mobile-only">
 								  <div class="text-center"><img src="' . $rep->get_rep_image() . '" class="repImage"></div>
@@ -52,11 +53,11 @@ function replicated_display_shortcode()
 																ID: ' . $rep->get_rep_id() . '<br>
 																<a href="mailto:' . $rep->get_rep_email() . '">' . $rep->get_rep_email() . '</a></p>
 																<h3 class="repBioView" onclick="toggleBio()"><span id="viewBio">' . $locale_translations->view_bio . '</span><span id="hideBio" style="display: none;">' . $locale_translations->hide_bio . '</span></h3><div id="repBio" style="display: none;">';
-			if(!empty($rep->get_rep_description())) {
+			if (!empty($rep->get_rep_description())) {
 				$replicated_display .= '<h4>' . $locale_translations->about_me . '</h4>' . $rep->get_rep_description() . '<hr>';
 			}
 			if ($locale_translations->disclaimer) {
-				$replicated_display .=  '<p class="repDisclaimer">' . $locale_translations->disclaimer . '</p>';
+				$replicated_display .= '<p class="repDisclaimer">' . $locale_translations->disclaimer . '</p>';
 			};
 			$replicated_display .= '</div><button class="repJoin"><a href="' . $rep->get_rep_join_link() . '" target="_blank">' . $locale_translations->join_team . '</a></button>';
 			$replicated_display .= '</div></div></div>';
@@ -66,7 +67,6 @@ function replicated_display_shortcode()
 }
 
 add_shortcode('replicatedDisplay', 'replicated_display_shortcode');
-
 
 
 function replicated_display_mobile_shortcode()
