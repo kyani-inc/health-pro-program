@@ -24,9 +24,10 @@
 
 #repDisplay {
   background-color: white;
-  top: 78px;
+  top: 75px;
   position: absolute;
   border: none;
+  border-bottom: 1px solid #000 !important;
   left: 0;
   border-radius: 0;
   min-width: 300px;
