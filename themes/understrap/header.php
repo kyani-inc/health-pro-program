@@ -19,7 +19,7 @@ $container = get_theme_mod('understrap_container_type');
 
 $logoLink = "";
 $logoWidth = "";
-$homeLink = "nitronutritionlife.com/";
+$homeLink = "https://nitronutritionlife.com/";
 
 if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
@@ -136,7 +136,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 							</span></a>
 					<!-- Your site title as branding in the menu -->
 					<?php if(!has_custom_logo()) { ?>
-					<a href="<?php echo($homeLink != "" ? "//" . $homeLink : esc_url(home_url('/'))); ?>"
+					<a href="<?php echo $homeLink; ?>"
 					   class="navbar-brand"><img
 								src="<?php echo esc_url(bloginfo('template_directory') . "/images/kyani-blue-logo.svg") ?>"
 								alt=""
