@@ -135,25 +135,11 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 							<span class="side-panel-btn"></span>
 							</span></a>
 					<!-- Your site title as branding in the menu -->
-					<?php if (!has_custom_logo()) { ?>
-
-						<?php if (is_front_page() && is_home()) : ?>
-
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url(home_url('/')); ?>"
-															 itemprop="url"><?php bloginfo('name'); ?></a></h1>
-
-						<?php else : ?>
-
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url(home_url('/')); ?>"
-							   itemprop="url"><?php bloginfo('name'); ?></a>
-
-						<?php endif; ?>
-
-						<?php
-					} else {
-						the_custom_logo();
-					}
-					?>
+					<a href="<?php echo($homeLink != "" ? "//" . $homeLink : esc_url(home_url('/'))); ?>"
+					   class="navbar-brand"><img
+								src="<?php echo esc_url(bloginfo('template_directory') . "/images/Nitro-Nutrition-Powered-by-Kyani-Logo.svg") ?>"
+								alt=""
+								width="80"></a>
 					<ul class="navbar-nav rep-nav">
 						<?php echo do_shortcode('[replicatedDisplay]'); ?>
 					</ul>
