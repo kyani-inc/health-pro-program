@@ -139,7 +139,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 					   class="navbar-brand"><img
 								src="<?php echo esc_url(bloginfo('template_directory') . "/images/Nitro-Nutrition-Powered-by-Kyani-Logo.svg") ?>"
 								alt=""
-								width="80"></a>
+								width="95"></a>
 					<ul class="navbar-nav rep-nav">
 						<?php echo do_shortcode('[replicatedDisplay]'); ?>
 					</ul>
