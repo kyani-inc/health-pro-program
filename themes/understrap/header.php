@@ -134,7 +134,7 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 							<span class="side-panel-btn"></span>
 							<span class="side-panel-btn"></span>
 							</span></a>
-					<?php if(!the_custom_logo()) { ?>
+					<?php if(!has_custom_logo()) { ?>
 					<a href="<?php echo($homeLink != "" ? "//" . $homeLink : esc_url(home_url('/'))); ?>"
 					   class="navbar-brand"><img
 								src="<?php echo esc_url(bloginfo('template_directory') . "/images/kyani-blue-logo.svg") ?>"
