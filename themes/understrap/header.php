@@ -137,9 +137,9 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 					<!-- Your site title as branding in the menu -->
 					<a href="<?php echo($homeLink != "" ? "//" . $homeLink : esc_url(home_url('/'))); ?>"
 					   class="navbar-brand"><img
-								src="<?php echo esc_url(bloginfo('template_directory') . "/images/Nitro-Nutrition-Powered-by-Kyani-Logo.svg") ?>"
+								src="<?php echo esc_url(bloginfo('template_directory') . "/images/kyani-blue-logo.svg") ?>"
 								alt=""
-								width="95"></a>
+								width="80"></a>
 					<ul class="navbar-nav rep-nav">
 						<?php echo do_shortcode('[replicatedDisplay]'); ?>
 					</ul>
