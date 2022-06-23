@@ -24,12 +24,12 @@ $homeLink = "nitronutritionlife.com/";
 if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
 	if (!($rep === "")) {
-		$logoLink = "kyani-blue-logo-bp.svg";
-		$logoWidth = "180";
+		$logoLink = "nn-logo.svg";
+		$logoWidth = "160";
 		$homeLink = $rep . '.nitronutritionlife.com/';
 	} else {
-		$logoLink = "kyani-blue-logo.svg";
-		$logoWidth = "80";
+		$logoLink = "nn-logo.svg";
+		$logoWidth = "160";
 	}
 
 } else {
@@ -137,9 +137,9 @@ if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 					<!-- Your site title as branding in the menu -->
 					<a href="<?php echo($homeLink != "" ? "//" . $homeLink : esc_url(home_url('/'))); ?>"
 					   class="navbar-brand"><img
-								src="<?php echo esc_url(bloginfo('template_directory') . "/images/kyani-blue-logo.svg") ?>"
+								src="<?php echo esc_url(bloginfo('template_directory') . "/images/nn-logo.svg") ?>"
 								alt=""
-								width="80"></a>
+								width="160"></a>
 					<ul class="navbar-nav rep-nav">
 						<?php echo do_shortcode('[replicatedDisplay]'); ?>
 					</ul>
