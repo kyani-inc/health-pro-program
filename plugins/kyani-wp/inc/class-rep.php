@@ -114,22 +114,22 @@ function set_rep()
 
 add_action('init', 'set_rep');
 
-//function add_rep_query_var($link)
-//{
-//	if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
-//		$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
-//		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'], "", $link);
-//		$path = str_replace('https/', '', $uri);
-//		$pathfin = substr_replace($path, $rep . '.nitronutritionlife.com/', 0, 0);
-//		return 'https://' . $pathfin;
-//	} else if (strpos($_SERVER['REQUEST_URI'], 'wp-admin') == FALSE) {
-//		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'], "", $link);
-//		$path = str_replace('https/', '', $uri);
-//		$pathfin = substr_replace($path, 'nitronutritionlife.com/', 0, 0);
-//		return 'https://' . $pathfin;
-//	}
-//	return $link;
-//}
+function add_rep_query_var($link)
+{
+	if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
+		$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
+		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'], "", $link);
+		$path = str_replace('https/', '', $uri);
+		$pathfin = substr_replace($path, $rep . '.' . $_SERVER['HTTP_HOST'] . '/', 0, 0);
+		return 'https://' . $pathfin;
+	} else if (strpos($_SERVER['REQUEST_URI'], 'wp-admin') == FALSE) {
+		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'], "", $link);
+		$path = str_replace('https/', '', $uri);
+		$pathfin = substr_replace($path, $_SERVER['HTTP_HOST'] . '/', 0, 0);
+		return 'https://' . $pathfin;
+	}
+	return $link;
+}
 
 add_filter('page_link', 'add_rep_query_var');
 add_filter('post_link', 'add_rep_query_var');
