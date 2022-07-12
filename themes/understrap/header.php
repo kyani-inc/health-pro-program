@@ -21,7 +21,7 @@ $logoLink = "";
 $logoWidth = "";
 $url = $_SERVER['HTTP_HOST'];
 $host = explode(".", $url);
-$homeLink = $host . "/";
+$homeLink = $host[1] . "/";
 
 if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
