@@ -19,14 +19,16 @@ $container = get_theme_mod('understrap_container_type');
 
 $logoLink = "";
 $logoWidth = "";
-$homeLink = $_SERVER['HTTP_HOST'] . "/";
+$url = $_SERVER['HTTP_HOST'];
+$host = explode(".", $url);
+$homeLink = $host . "/";
 
 if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
 	if (!($rep === "")) {
 		$logoLink = "nn-logo.svg";
 		$logoWidth = "160";
-		$homeLink = $rep . '.' . $_SERVER['HTTP_HOST'] . '/';
+		$homeLink = $rep . '.' . $host . '/';
 	} else {
 		$logoLink = "nn-logo.svg";
 		$logoWidth = "160";
