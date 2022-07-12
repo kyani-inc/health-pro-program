@@ -19,16 +19,14 @@ $container = get_theme_mod('understrap_container_type');
 
 $logoLink = "";
 $logoWidth = "";
-$url = $_SERVER['HTTP_HOST'];
-$host = explode(".", $url);
-$homeLink = $host[1] . "/";
+$homeLink = "nitronutritionfit.com/";
 
 if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
 	if (!($rep === "")) {
 		$logoLink = "nn-logo.svg";
 		$logoWidth = "160";
-		$homeLink = $rep . '.' . $host . '/';
+		$homeLink = $rep . '.nitronutritionfit.com/';
 	} else {
 		$logoLink = "nn-logo.svg";
 		$logoWidth = "160";
