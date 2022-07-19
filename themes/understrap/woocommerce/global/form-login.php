@@ -113,7 +113,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 					   id="password" autocomplete="current-password"/>
 			</p>
 			<p class="woocommerce-LostPassword lost_password">
-				<a href="<?php echo esc_url(wp_lostpassword_url()); ?>"><?php esc_html_e('Lost your password?', 'woocommerce'); ?></a>
+				<a href="/password-reset"><?php esc_html_e('Lost your password?', 'woocommerce'); ?></a>
 			</p>
 			<?php do_action('woocommerce_login_form'); ?>
 			<p class="form-row">

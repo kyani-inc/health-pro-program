@@ -62,7 +62,7 @@ $col = 'yes' === get_option('woocommerce_enable_myaccount_registration') ? 6 : 1
 					value="<?php esc_attr_e('Log in', 'woocommerce'); ?>"><?php esc_html_e('Log in', 'woocommerce'); ?></button>
 		</p>
 		<p class="woocommerce-LostPassword lost_password">
-			<a href="/password-reset"><?php esc_html_e('Lost your password?', 'woocommerce'); ?></a>
+			<a href="<?php echo esc_url(wp_lostpassword_url()); ?>"><?php esc_html_e('Lost your password?', 'woocommerce'); ?></a>
 		</p>
 
 		<?php do_action('woocommerce_login_form_end'); ?>
