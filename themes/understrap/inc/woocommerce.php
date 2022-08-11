@@ -167,6 +167,7 @@ function custom_override_checkout_fields($fields)
 		unset($fields['billing']['billing_health_pro_agreement']);
 		unset($fields['billing']['billing_health_pro_agreement_2']);
 		unset($fields['billing']['billing_health_pro_agreement_3']);
+		unset($fields['billing']['billing_health_pro_agreement_4']);
 	}
 	return $fields;
 }
