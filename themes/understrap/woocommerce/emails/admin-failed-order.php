@@ -1,8 +1,8 @@
 <?php
 /**
- * Customer processing order email
+ * Admin failed order email
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/emails/customer-processing-order.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/emails/admin-failed-order.php
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -24,11 +24,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<?php /* translators: %s: Customer first name */ ?>
-<p><time datetime="%s">%s</time></p
-<p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
-<?php /* translators: %s: Order number */ ?>
-<p><?php printf( esc_html__( 'Congratulations and welcome to the Nitro Nutrition family. We’ve received your order [order #] and it is now being processed. Watch for additional email updates as it is packed and readied for shipment. ', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></p>
+<?php /* translators: %1$s: Order number. %2$s: Customer full name. */ ?>
+<p><?php printf( esc_html__( 'Payment for order #%1$s from %2$s has failed. The order was as follows:', 'woocommerce' ), esc_html( $order->get_order_number() ), esc_html( $order->get_formatted_billing_full_name() ) ); ?></p>
 
 <?php
 
@@ -60,5 +57,5 @@ if ( $additional_content ) {
 
 /*
  * @hooked WC_Emails::email_footer() Output the email footer
- */
+*/
 do_action( 'woocommerce_email_footer', $email );

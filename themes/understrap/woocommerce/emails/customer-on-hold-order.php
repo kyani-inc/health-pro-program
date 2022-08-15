@@ -1,8 +1,8 @@
 <?php
 /**
- * Customer processing order email
+ * Customer on-hold order email
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/emails/customer-processing-order.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/emails/customer-on-hold-order.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -15,9 +15,7 @@
  * @version 3.7.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 /*
  * @hooked WC_Emails::email_header() Output the email header
@@ -25,10 +23,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php /* translators: %s: Customer first name */ ?>
-<p><time datetime="%s">%s</time></p
 <p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
-<?php /* translators: %s: Order number */ ?>
-<p><?php printf( esc_html__( 'Congratulations and welcome to the Nitro Nutrition family. We’ve received your order [order #] and it is now being processed. Watch for additional email updates as it is packed and readied for shipment. ', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></p>
+<p><?php esc_html_e( 'Thanks for your order. It’s on-hold until we confirm that payment has been received. In the meantime, here’s a reminder of what you ordered:', 'woocommerce' ); ?></p>
 
 <?php
 

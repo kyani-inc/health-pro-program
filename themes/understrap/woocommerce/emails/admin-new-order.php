@@ -1,8 +1,8 @@
 <?php
 /**
- * Customer processing order email
+ * Admin new order email
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/emails/customer-processing-order.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/emails/admin-new-order.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -11,25 +11,19 @@
  * the readme will list any important changes.
  *
  * @see https://docs.woocommerce.com/document/template-structure/
- * @package WooCommerce\Templates\Emails
+ * @package WooCommerce\Templates\Emails\HTML
  * @version 3.7.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 /*
  * @hooked WC_Emails::email_header() Output the email header
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<?php /* translators: %s: Customer first name */ ?>
-<p><time datetime="%s">%s</time></p
-<p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
-<?php /* translators: %s: Order number */ ?>
-<p><?php printf( esc_html__( 'Congratulations and welcome to the Nitro Nutrition family. We’ve received your order [order #] and it is now being processed. Watch for additional email updates as it is packed and readied for shipment. ', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></p>
-
+<?php /* translators: %s: Customer billing full name */ ?>
+<p><?php printf( esc_html__( 'You’ve received the following order from %s:', 'woocommerce' ), $order->get_formatted_billing_full_name() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 <?php
 
 /*

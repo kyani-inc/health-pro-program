@@ -1,8 +1,8 @@
 <?php
 /**
- * Customer processing order email
+ * Admin cancelled order email
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/emails/customer-processing-order.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/emails/admin-cancelled-order.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -12,7 +12,7 @@
  *
  * @see https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates\Emails
- * @version 3.7.0
+ * @version 4.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -21,17 +21,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /*
  * @hooked WC_Emails::email_header() Output the email header
- */
+*/
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<?php /* translators: %s: Customer first name */ ?>
-<p><time datetime="%s">%s</time></p
-<p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
-<?php /* translators: %s: Order number */ ?>
-<p><?php printf( esc_html__( 'Congratulations and welcome to the Nitro Nutrition family. We’ve received your order [order #] and it is now being processed. Watch for additional email updates as it is packed and readied for shipment. ', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></p>
+<?php /* translators: %1$s: Order number, %2$s: Customer full name.  */ ?>
+<p><?php printf( esc_html__( 'Notification to let you know &mdash; order #%1$s belonging to %2$s has been cancelled:', 'woocommerce' ), esc_html( $order->get_order_number() ), esc_html( $order->get_formatted_billing_full_name() ) ); ?></p>
 
 <?php
-
 /*
  * @hooked WC_Emails::order_details() Shows the order details table.
  * @hooked WC_Structured_Data::generate_order_data() Generates structured data.
