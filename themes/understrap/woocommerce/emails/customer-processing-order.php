@@ -25,7 +25,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php /* translators: %s: Customer first name */ ?>
-<p><time datetime="%s">%s</time></p
 <p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
 <?php /* translators: %s: Order number */ ?>
 <p><?php printf( esc_html__( 'Congratulations and welcome to the Nitro Nutrition family. We’ve received your order [order #] and it is now being processed. Watch for additional email updates as it is packed and readied for shipment. ', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></p>
