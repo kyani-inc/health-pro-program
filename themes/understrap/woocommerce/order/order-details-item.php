@@ -54,7 +54,7 @@ if (!apply_filters('woocommerce_order_item_visible', true, $item)) {
 			$unit_price = $product_price / $product_quantity;
 			if ($unit_price != 0) { ?>
 				<div class="unit-price">Unit Price: $<?php
-					echo number_format((float)$unit_price, 2, '.', ''); echo $product_quantity; echo $product_price; echo $unit_price; ?>
+					echo number_format((float)$unit_price, 2, '.', '');?>
 			</div> <?php } ?>
 			Price:
 				<?php echo $order->get_formatted_line_subtotal($item); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
