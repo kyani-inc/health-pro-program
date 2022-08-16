@@ -50,7 +50,7 @@ if (!apply_filters('woocommerce_order_item_visible', true, $item)) {
 			</h2>
 			<span class="product-price" data-title="<?php esc_attr_e('Price', 'woocommerce'); ?>">
 			<?php $product_quantity = $item->get_quantity($item);
-			$unit_price = $product_price / $product_quantity;
+			$unit_price = $product->get_regular_price() * $product_quantity;
 			if ($unit_price != 0) { ?>
 				<div class="unit-price">Unit Price: $<?php $product_price = $item->get_total($item);
 					echo number_format((float)$unit_price, 2, '.', ''); ?>

@@ -53,6 +53,9 @@ if ( $show_downloads ) {
 			<?php if (wc_discount_total() !== NULL) { ?>
 				<td class="product-total"><?php esc_html_e( 'Discount', 'woocommerce' ); ?></td>
 			<?php } ?>
+			<?php if (WC()->cart->get_cart_shipping_total() != "$0") { ?>
+				<td class="product-total"><?php esc_html_e('Shipping', 'woocommerce'); ?></td>
+			<?php } ?>
 			<td class="product-total"><?php esc_html_e( 'Taxes', 'woocommerce' ); ?></td>
 			<td class="product-total"><strong><?php esc_html_e( 'Total price', 'woocommerce' ); ?></strong></td>
 		</tr>
