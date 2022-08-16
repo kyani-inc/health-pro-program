@@ -20,7 +20,6 @@ $container = get_theme_mod('understrap_container_type');
 $logoLink = "";
 $logoWidth = "";
 $homeLink = "nitronutritionlife.com/";
-echo print_r($_SERVER['HTTP_X_KYANI_REP']);
 
 if (isset($_SERVER['HTTP_X_KYANI_REP'])) {
 	$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
