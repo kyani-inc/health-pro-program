@@ -50,10 +50,11 @@ if (!apply_filters('woocommerce_order_item_visible', true, $item)) {
 			</h2>
 			<span class="product-price" data-title="<?php esc_attr_e('Price', 'woocommerce'); ?>">
 			<?php $product_quantity = $item->get_quantity($item);
+			$product_price = $item->get_total($item);
 			$unit_price = $product_price / $product_quantity;
 			if ($unit_price != 0) { ?>
-				<div class="unit-price">Unit Price: $<?php $product_price = $item->get_total($item);
-					echo number_format((float)$unit_price, 2, '.', ''); ?>
+				<div class="unit-price">Unit Price: $<?php
+					echo number_format((float)$unit_price, 2, '.', '');?>
 			</div> <?php } ?>
 			Price:
 				<?php echo $order->get_formatted_line_subtotal($item); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>

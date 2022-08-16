@@ -53,6 +53,9 @@ if ( $show_downloads ) {
 			<?php if (wc_discount_total() !== NULL) { ?>
 				<td class="product-total"><?php esc_html_e( 'Discount', 'woocommerce' ); ?></td>
 			<?php } ?>
+			<?php if (WC()->cart->get_cart_shipping_total() != "$0") { ?>
+				<td class="product-total"><?php esc_html_e('Shipping', 'woocommerce'); ?></td>
+			<?php } ?>
 			<td class="product-total"><?php esc_html_e( 'Taxes', 'woocommerce' ); ?></td>
 			<td class="product-total"><strong><?php esc_html_e( 'Total price', 'woocommerce' ); ?></strong></td>
 		</tr>
@@ -61,6 +64,9 @@ if ( $show_downloads ) {
 				<td>$<?php echo $order->get_subtotal(); ?></td>
 			<?php if (wc_discount_total() !== NULL) { ?>
 				<td>-<?php echo wc_discount_total(); ?></td>
+			<?php } ?>
+			<?php if (WC()->cart->get_cart_shipping_total() != "$0") { ?>
+				<td><?php echo $order->get_shipping_to_display(); ?></td>
 			<?php } ?>
 			<td>$<?php echo $order->get_total_tax(); ?></td>
 			<td><strong><?php echo $order->get_formatted_order_total(); ?></strong></td>
