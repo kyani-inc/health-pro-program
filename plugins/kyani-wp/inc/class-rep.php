@@ -120,14 +120,12 @@ function add_rep_query_var($link)
 		$rep = explode(';', $_SERVER['HTTP_X_KYANI_REP'])[0];
 		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'], "", $link);
 		$path = str_replace('https/', '', $uri);
-		$url = $_SERVER['HTTP_HOST'];
-		$host = explode(".", $url);
-		$pathfin = substr_replace($path, $rep . '.nitronutritionfit.com/', 0, 0);
+		$pathfin = substr_replace($path, $rep . '.nitronutritionlife.com/', 0, 0);
 		return 'https://' . $pathfin;
 	} else if (strpos($_SERVER['REQUEST_URI'], 'wp-admin') == FALSE) {
 		$uri = str_replace($_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'], "", $link);
 		$path = str_replace('https/', '', $uri);
-		$pathfin = substr_replace($path, 'nitronutritionfit.com/', 0, 0);
+		$pathfin = substr_replace($path, 'nitronutritionlife.com/', 0, 0);
 		return 'https://' . $pathfin;
 	}
 	return $link;
