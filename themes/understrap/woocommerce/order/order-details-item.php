@@ -56,7 +56,7 @@ if (!apply_filters('woocommerce_order_item_visible', true, $item)) {
 					echo number_format((float)$unit_price, 2, '.', ''); ?>
 			</div> <?php } ?>
 			Price:
-				<?php echo $order->get_formatted_line_subtotal($item) * $product_quantity; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				<?php echo $order->get_formatted_line_subtotal($item); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</span>
 		</td>
 

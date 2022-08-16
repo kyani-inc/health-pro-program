@@ -66,7 +66,7 @@ if ( $show_downloads ) {
 				<td>-<?php echo wc_discount_total(); ?></td>
 			<?php } ?>
 			<?php if (WC()->cart->get_cart_shipping_total() != "$0") { ?>
-				<td><?php echo $order->get_shipping_total(); ?><?php echo $order->get_shipping_to_display(); ?></td>
+				<td><?php echo $order->get_shipping_to_display(); ?></td>
 			<?php } ?>
 			<td>$<?php echo $order->get_total_tax(); ?></td>
 			<td><strong><?php echo $order->get_formatted_order_total(); ?></strong></td>
